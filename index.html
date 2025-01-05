@@ -21,3 +21,22 @@
         <li><a href="booking.html" class="btn-book-now">Book Now</a></li>
     </ul>
 </nav>
+
+<section id="booking">
+    <h2>Book a Consultation</h2>
+    <form action="/submit_booking" method="POST" class="booking-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Notes:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
