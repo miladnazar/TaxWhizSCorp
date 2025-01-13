@@ -47,58 +47,64 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #e6f7ff;
     padding: 3rem 1rem;
+    height: 300px; /* Adjust height as needed */
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.hero p {
+.hero-left {
+    text-align: left;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    color: #003366;
+    margin: 0;
+}
+
+.hero-left p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: #555;
+    margin-top: 0.5rem;
 }
 
 .cta-button {
-    display: inline-block;
     background: #003366;
     color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1rem;
+    align-self: flex-start;
 }
 
 .cta-button:hover {
     background: #00509e;
 }
 
-/* Sections */
-section {
-    padding: 2rem;
-}
+/* Adjust responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.service-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service-item {
-    max-width: 300px;
-    text-align: center;
-    margin: 1rem;
-}
-
-.service-item h3 {
-    color: #003366;
+    .hero-left {
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* Contact Form */
