@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Header Styles */
 header {
     background: #003366;
     color: #fff;
@@ -50,9 +51,11 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e6f7ff;
+    background: linear-gradient(to right, rgba(0, 51, 102, 0.8), rgba(0, 80, 158, 0.8)), 
+                url('../images/tax-banner.jpg') no-repeat center center / cover;
     padding: 3rem 1rem;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
+    color: white;
 }
 
 .hero-content {
@@ -70,31 +73,44 @@ nav ul li a:hover {
 
 .hero-left h1 {
     font-size: 3rem;
-    color: #003366;
     margin: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .hero-left p {
     font-size: 1.2rem;
-    color: #555;
     margin-top: 0.5rem;
+    animation: fadeIn 2s ease-in-out 0.5s;
 }
 
 .cta-button {
-    background: #003366;
-    color: #fff;
+    background: #ffd700;
+    color: #003366;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
     align-self: flex-start;
+    animation: fadeIn 2s ease-in-out 1s;
 }
 
 .cta-button:hover {
-    background: #00509e;
+    background: #ffcc33;
 }
 
-/* Adjust responsiveness */
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -105,44 +121,4 @@ nav ul li a:hover {
     .hero-left {
         margin-bottom: 1.5rem;
     }
-}
-
-/* Contact Form */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 1rem;
-}
-
-form input, form textarea, form button {
-    font-size: 1rem;
-    padding: 0.8rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #003366;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-form button:hover {
-    background: #00509e;
-}
-
-/* Footer */
-footer {
-    background: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
 }
