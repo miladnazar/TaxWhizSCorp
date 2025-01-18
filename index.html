@@ -10,47 +10,31 @@
 </head>
 <body>
     <header>
-        <!-- Hamburger Menu -->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <!-- Logo and Hamburger Menu -->
+        <div class="mobile-header">
+            <img src="img/logo.png" alt="Tax Whiz Logo" class="logo">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
 
         <nav>
-            <ul>
-                <li>
-                    <img src="img/logo.png" alt="Tax Whiz Logo" class="logo">
-                    <p class="tagline">Your Trusted Partner in Tax Preparation</p>
-                </li>
+            <ul id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="social-icons">
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
+                <li><a href="#contact" class="cta-button">Get Started</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <p class="fade-in">Welcome to Tax Whiz</p>
-                </div>
-                <a href="#contact" class="cta-button fade-in">Get Started</a>
-            </div>
+            <!-- Centered Content -->
         </section>
 
         <section id="services">
