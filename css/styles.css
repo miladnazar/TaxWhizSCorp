@@ -10,27 +10,27 @@ body {
     line-height: 1.6;
     color: #173D06;
     background-color: #CAEEFB;
-    max-width: 100%; /* Ensure body content doesn't exceed viewport */
+    max-width: 100%;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Header Styling */
 header {
     display: flex;
-    align-items: center; /* Vertically align elements */
-    justify-content: space-between; /* Space between logo, nav, and CTA */
+    align-items: center;
+    justify-content: space-between;
     background-color: #84E291;
     padding: 1rem;
-    flex-wrap: wrap; /* Stack elements when space runs out */
-    max-width: 100%; /* Ensure it fits within the screen width */
-    box-sizing: border-box; /* Include padding in width calculation */
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
 }
 
+/* Logo Styling */
 header .logo img {
-    height: 50px; /* Adjust size */
-    max-width: 100%; /* Prevent overflow */
-    object-fit: contain; /* Maintain proportions */
+    height: 50px;
+    object-fit: contain;
 }
 
 /* Hamburger Button */
@@ -41,44 +41,25 @@ header .logo img {
     font-size: 2rem;
     color: #173D06;
     cursor: pointer;
-    z-index: 20; /* Ensure it's above other elements */
+    z-index: 20;
 }
 
 #hamburger:focus {
-    outline: none; /* Remove focus outline */
+    outline: none;
 }
 
-/* Mobile Menu Hidden by Default */
-#mobile-menu {
-    display: flex;
-    flex-direction: column; /* Stack menu items */
-    align-items: flex-start;
-    gap: 1rem;
-    position: absolute;
-    top: 100%; /* Position below header */
-    left: 0;
-    background-color: #84E291;
-    width: 100%;
-    padding: 1rem;
-    display: none; /* Hide initially */
-}
-
-#mobile-menu.open {
-    display: flex; /* Show when toggled */
+/* Navigation */
+nav {
+    display: flex; /* Visible by default on desktop */
+    align-items: center;
 }
 
 #menu {
     display: flex;
-    flex-wrap: wrap; /* Stack items if space is limited */
-    justify-content: center; /* Center-align items on small screens */
     list-style: none;
-    gap: 1rem; /* Adjust spacing */
-    padding: 0;
+    gap: 2rem;
     margin: 0;
-}
-
-#menu li {
-    position: relative; /* For dropdown positioning */
+    padding: 0;
 }
 
 #menu a {
@@ -95,39 +76,6 @@ header .logo img {
     color: white;
 }
 
-/* Dropdown Menu */
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: #84E291;
-    list-style: none;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-    left: 0;
-    z-index: 10;
-    width: max-content; /* Ensure it doesn't collapse */
-}
-
-#menu li:hover .dropdown {
-    display: block; /* Keep dropdown visible on hover */
-}
-
-.dropdown:hover {
-    display: block;
-}
-
-.dropdown li {
-    padding: 0.5rem 0;
-}
-
-.dropdown li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-}
-
 /* CTA Button */
 .cta-button {
     background: #84E291;
@@ -140,9 +88,8 @@ header .logo img {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    margin-top: 1rem;
-    text-align: center; /* Center text */
-    box-sizing: border-box; /* Prevent width issues */
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .cta-button:hover {
@@ -150,44 +97,35 @@ header .logo img {
     color: white;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
-}
-
-.hero h1 {
-    font-size: 2rem;
-    line-height: 1.2; /* Maintain readability */
-}
-
-.hero p {
-    margin-top: 1rem;
-}
-
-/* Footer */
-footer {
-    background: #173D06;
-    color: white;
-    text-align: center;
+/* Mobile Menu Hidden by Default */
+#mobile-menu {
+    display: none; /* Hidden initially */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #84E291;
+    width: 100%;
     padding: 1rem;
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Stack logo, nav, and button vertically */
-        align-items: center; /* Center align elements */
-        text-align: center; /* Adjust alignment for readability */
-    }
+#mobile-menu.open {
+    display: flex; /* Show menu when open */
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
     #hamburger {
         display: block; /* Show hamburger button on mobile */
     }
 
+    nav {
+        display: none; /* Hide default menu on mobile */
+    }
+
     #mobile-menu {
-        display: none; /* Hide menu initially */
-        flex-direction: column;
-        width: 100%; /* Take full width */
+        display: none; /* Hide mobile menu by default */
     }
 }
