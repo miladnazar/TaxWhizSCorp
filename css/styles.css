@@ -19,13 +19,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #D9F2D0; /* Money Green matching the Logo */
+    background-color: #84E291; /* Money Green matching the Logo */
     padding: 1rem;
     color: white;
 }
 
 header .logo {
-    height: 30px;
+    height: 90px;
 }
 
 .hamburger-menu {
@@ -58,7 +58,7 @@ header .logo {
 }
 
 .cta-button {
-    background: #D9F2D0;
+    background: #84E291;
     color: #173D06; /* Dark green tone */
     padding: 0.5rem 1rem;
     border: 2px solid #173D06;
