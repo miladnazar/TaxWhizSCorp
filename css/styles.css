@@ -24,17 +24,15 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    margin: 0; /* Ensure no gap with the hero section */
+    margin: 0;
 }
 
-/* Logo Styling */
 header .logo img {
     height: 50px;
 }
 
-/* Hamburger Button */
 #hamburger {
-    display: none; /* Hidden on desktop */
+    display: none;
     background: none;
     border: none;
     font-size: 2rem;
@@ -42,7 +40,6 @@ header .logo img {
     cursor: pointer;
 }
 
-/* Navigation */
 nav {
     display: flex;
     align-items: center;
@@ -68,7 +65,6 @@ nav {
     color: white;
 }
 
-/* CTA Button */
 .cta-button {
     background: #84E291;
     color: #173D06;
@@ -84,7 +80,6 @@ nav {
     color: white;
 }
 
-/* Dropdown Styling */
 .dropdown {
     display: none;
     position: absolute;
@@ -101,29 +96,41 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center; /* Center the image */
-    background-size: contain; /* Ensure the full image fits within the hero section */
+    position: relative;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    padding: 0 1rem;
-    margin: 0;
-    overflow: hidden; /* Prevent unwanted scrollbars */
+    overflow: hidden;
 }
 
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%; /* Slight zoom out */
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Focus on center */
+    filter: grayscale(100%); /* Grayscale effect for better text readability */
+    z-index: -1;
+}
 
-/* Responsive Design for Mobile */
+.hero-content {
+    color: white;
+    z-index: 1; /* Ensure text appears above the image */
+    padding: 0 1rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Make text more readable */
+}
+
 @media (max-width: 768px) {
     #hamburger {
-        display: block; /* Show hamburger on mobile */
+        display: block;
     }
 
     nav {
-        display: none; /* Hide menu on mobile by default */
+        display: none;
         flex-direction: column;
         background-color: #84E291;
         position: absolute;
@@ -134,7 +141,7 @@ nav {
     }
 
     nav.open {
-        display: flex; /* Show menu when open */
+        display: flex;
     }
 
     #menu {
@@ -146,8 +153,7 @@ nav {
         margin-top: 1rem;
     }
 
-    .hero {
-        background: url('../img/hero-bg.jpg') no-repeat center center/contain; /* Contain image for mobile */
-        background-color: #173D06; /* Add fallback in case image doesn't load */
+    .hero-img {
+        object-position: center top; /* Focus more on the top for mobile */
     }
 }
