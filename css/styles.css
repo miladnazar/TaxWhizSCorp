@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     margin: 0 auto;
     color: #173D06; /* Green tone from logo */
-    background-color: #CAEEFB; /* Updated background color */
+    background-color: #CAEEFB; /* Light background color */
     max-width: 1200px;
 }
 
@@ -19,19 +19,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #84E291;
-    padding: 0.25rem 1rem;  /* Reduced padding to make header shorter */
+    background-color: #84E291; /* Green background for header */
+    padding: 0.5rem 2rem;  /* Reduced padding to make header shorter */
     color: white;
-    height: 60px; /* Fixed height */
+    height: 80px; /* Fixed height */
 }
 
 header .logo {
-    height: 50px;  /* Slightly smaller logo size */
-    margin-left: 10px;  /* Adds space to the left of the logo */
+    height: 60px; /* Slightly smaller logo */
+    margin-left: 20px;  /* Adds space to the left of the logo */
 }
 
 .hamburger-menu {
-    display: none;  /* Hide the hamburger menu by default on desktop */
+    display: none;  /* Hide by default */
     cursor: pointer;
 }
 
@@ -46,7 +46,7 @@ header .logo {
 #menu {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #menu li {
@@ -61,12 +61,14 @@ header .logo {
 
 .cta-button {
     background: #84E291;
-    color: #173D06; /* Dark green tone */
-    padding: 0.5rem 1rem;
+    color: #173D06; /* Dark green */
+    padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
     text-decoration: none;
-    align-self: center; /* Ensure button stays within the header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-button:hover {
@@ -130,18 +132,24 @@ footer {
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
-    /* Make hamburger menu appear on mobile */
     .hamburger-menu {
-        display: block;
+        display: block; /* Show hamburger on mobile */
     }
 
     #menu {
         display: none;
         flex-direction: column;
         background: #E68900;
+        width: 100%;
     }
 
     #menu-toggle:checked + #menu {
         display: flex;
+    }
+
+    #menu li {
+        text-align: left;
+        padding: 1rem;
+        border-bottom: 1px solid #fff;
     }
 }
