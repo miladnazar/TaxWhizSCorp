@@ -1,106 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Whiz | Expert Tax Preparation</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><img src="img/logo.png" alt="Tax Whiz Logo" class="logo"></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-choose-us">Why Choose Us</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <!-- Hamburger Menu -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <h1 class="fade-in">Tax Whiz</h1>
-                    <p class="fade-in">Your Trusted Partner in Tax Preparation</p>
-                </div>
-                <a href="#contact" class="cta-button fade-in">Get Started</a>
-            </div>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Individual Tax Preparation</h3>
-                    <p>We simplify the tax filing process for individuals, ensuring maximum refunds and compliance.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Business Tax Services</h3>
-                    <p>Expert solutions for businesses of all sizes, from tax planning to filing.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Tax Consulting</h3>
-                    <p>Comprehensive advice to help you save money and stay compliant with regulations.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="why-choose-us">
-            <h2>Why Choose Tax Whiz?</h2>
-            <ul>
-                <li>Years of experience in tax preparation and consulting.</li>
-                <li>Dedicated to accuracy, compliance, and maximizing refunds.</li>
-                <li>Personalized services tailored to your unique needs.</li>
-                <li>Trusted by individuals and businesses across the region.</li>
-            </ul>
-        </section>
-
-        <section id="schedule">
-            <h2>Schedule a Meeting</h2>
-            <p>Book a virtual 1-hour meeting with us to discuss your tax needs.</p>
-            <iframe src="https://calendly.com/your-calendly-link" width="100%" height="500" frameborder="0"></iframe>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="How can we help you?" rows="5" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-
-        <section id="payment">
-            <h2>Make a Payment</h2>
-            <button id="stripe-payment-button">Pay Now</button>
-        </section>
-
-        <section id="file-upload">
-            <h2>Upload Your Documents</h2>
-            <form id="upload-form">
-                <label for="file">Choose File:</label>
-                <input type="file" id="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.xls,.xlsx" required>
-                <button type="submit">Upload</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Tax Whiz. All rights reserved. | Privacy Policy</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <nav>
+        <ul>
+            <li>
+                <img src="img/logo.png" alt="Tax Whiz Logo" class="logo">
+                <p class="tagline">Your Trusted Partner in Tax Preparation</p>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
