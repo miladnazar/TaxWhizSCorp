@@ -101,7 +101,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center top/cover; /* Focus on the top part (your face) */
+    background: url('../img/hero-bg.jpg') no-repeat center center; /* Center the image */
+    background-size: contain; /* Ensure the full image fits within the hero section */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -110,8 +111,10 @@ nav {
     text-align: center;
     color: white;
     padding: 0 1rem;
-    margin: 0; /* Ensure no gap */
+    margin: 0;
+    overflow: hidden; /* Prevent unwanted scrollbars */
 }
+
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
