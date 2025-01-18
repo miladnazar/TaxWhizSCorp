@@ -10,17 +10,15 @@ hamburger.addEventListener('click', () => {
     mobileMenuOverlay.classList.toggle('open');
 });
 
-// Close the menu when clicking anywhere outside or on a menu link
-document.addEventListener('click', (event) => {
-    const isClickInside = mobileMenuOverlay.contains(event.target) || hamburger.contains(event.target);
-
-    if (!isClickInside) {
+// Close the menu when clicking on a link
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
         mobileMenuOverlay.classList.remove('open');
-    }
+    });
 });
 
 // Handle submenu toggle for "Services"
 servicesLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default navigation
-    servicesMenu.classList.toggle('open'); // Toggle submenu visibility
+    event.preventDefault();
+    servicesMenu.classList.toggle('open');
 });
