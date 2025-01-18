@@ -104,7 +104,7 @@ nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: bottom;
     align-items: center;
     text-align: center;
     color: white;
