@@ -10,8 +10,8 @@ body {
     line-height: 1.6;
     color: #173D06;
     background-color: #CAEEFB;
-    max-width: 100%; /* Allow full width for mobile */
-    margin: 0 auto;
+    max-width: 100%; /* Ensure full width scaling */
+    margin: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -24,7 +24,8 @@ header {
     padding: 1rem 2rem;
     color: white;
     height: 100px;
-    position: relative; /* Ensure precise positioning */
+    position: relative;
+    flex-wrap: wrap; /* Allow elements to stack on smaller screens */
 }
 
 header .logo {
@@ -44,6 +45,7 @@ nav {
     gap: 2rem; /* Spacing between menu items */
     margin: 0 auto;
     padding: 0;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 #menu li {
@@ -66,7 +68,7 @@ nav {
 
 /* Dropdown Menu */
 .dropdown {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
     background-color: #84E291;
     list-style: none;
@@ -74,7 +76,17 @@ nav {
     border-radius: 5px;
     margin-top: 0.5rem;
     left: 0;
-    z-index: 10; /* Ensure it appears above other elements */
+    z-index: 10;
+    width: max-content; /* Ensure it doesn't collapse */
+}
+
+#menu li:hover .dropdown {
+    display: block; /* Keep dropdown visible on hover */
+}
+
+/* Ensures dropdown stays visible even when moving the cursor over it */
+.dropdown:hover {
+    display: block;
 }
 
 .dropdown li {
@@ -86,10 +98,6 @@ nav {
     text-decoration: none;
     font-weight: bold;
     display: block;
-}
-
-#menu li:hover .dropdown {
-    display: block; /* Show dropdown on hover */
 }
 
 /* CTA Button */
@@ -104,6 +112,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    margin-top: 1rem; /* Adjust for smaller screens */
 }
 
 .cta-button:hover {
@@ -117,4 +126,26 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-bottom: 1rem;
+    }
+
+    #menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 1rem; /* Adjust gap for readability */
+    }
+
+    .cta-button {
+        margin: 1rem 0;
+    }
 }
