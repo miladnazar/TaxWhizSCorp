@@ -23,87 +23,59 @@ header {
     padding: 1rem;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
-.logo img {
-    max-height: 50px;
-    width: auto;
+/* Logo Styling */
+header .logo img {
+    height: 50px;
 }
 
-/* Desktop Navigation */
-#desktop-menu {
-    display: none; /* Hidden by default for mobile */
-    flex: 1;
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #173D06;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-#desktop-menu ul {
+#menu {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
-#desktop-menu a {
+#menu a {
     color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
-#desktop-menu a:hover {
+#menu a:hover, #menu a.active {
     background-color: #E68900;
     color: white;
-}
-
-/* Dropdown Styling */
-.has-dropdown {
-    position: relative;
-}
-
-.has-dropdown .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #84E291;
-    list-style: none;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.has-dropdown:hover .dropdown {
-    display: block;
-}
-
-.dropdown li {
-    margin-bottom: 0.5rem;
-}
-
-.dropdown li:last-child {
-    margin-bottom: 0;
-}
-
-.dropdown a {
-    color: black;
-    text-decoration: none;
-    font-weight: normal;
-    display: block; /* Ensure vertical listing */
 }
 
 /* CTA Button */
 .cta-button {
     background: #84E291;
     color: #173D06;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
 .cta-button:hover {
@@ -111,62 +83,71 @@ header {
     color: white;
 }
 
-/* Mobile Menu Overlay */
-#mobile-menu-overlay {
+/* Dropdown Styling */
+.dropdown {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-}
-
-#mobile-menu-overlay.open {
-    display: flex;
-}
-
-#mobile-menu {
+    position: absolute;
+    background-color: #84E291;
     list-style: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+#menu li:hover .dropdown {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-#mobile-menu li {
-    margin: 1rem 0;
-}
-
-#mobile-menu a {
     color: white;
-    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #desktop-menu {
-        display: none; /* Hide desktop menu */
-    }
-
     #hamburger {
-        display: block;
-    }
-}
-
-@media (min-width: 769px) {
-    #hamburger {
-        display: none; /* Hide hamburger menu on desktop */
+        display: block; /* Show hamburger on mobile */
     }
 
-    #desktop-menu {
-        display: flex; /* Show desktop menu */
+    nav {
+        display: none; /* Hide menu on mobile by default */
+        flex-direction: column;
+        background-color: #84E291;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
     }
 
-    #mobile-menu-overlay {
-        display: none;
+    nav.open {
+        display: flex; /* Show menu when open */
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-button {
+        margin-top: 1rem;
     }
 }
