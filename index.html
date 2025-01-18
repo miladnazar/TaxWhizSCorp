@@ -1,43 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Whiz</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Tax Whiz Logo">
-        </div>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
-    </header>
-
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay">
-        <ul id="mobile-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <a href="#get-started" class="cta-button mobile-cta">Get Started</a>
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Tax Whiz Logo">
     </div>
+    <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Tax Whiz</h1>
-        <p>Your trusted tax partner, simplifying finances for you.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Tax Whiz. All rights reserved.</p>
-    </footer>
-
-    <!-- Linking to the Script -->
-    <script src="js/script.js"></script>
-</body>
-</html>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay">
+    <ul id="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#" id="services-link">Services</a>
+            <ul id="services-submenu" class="submenu">
+                <li><a href="#individual-tax-return">Individual Tax Return</a></li>
+                <li><a href="#business-tax-return">Business Tax Return</a></li>
+                <li><a href="#bookkeeping-services">Bookkeeping Services</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#get-started" class="cta-button mobile-cta">Get Started</a>
+</div>
