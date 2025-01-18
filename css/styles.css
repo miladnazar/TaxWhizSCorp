@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: #173D06;
     background-color: #CAEEFB;
-    max-width: 100%; /* Ensure full width scaling */
+    max-width: 100%;
     margin: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -18,38 +18,38 @@ body {
 /* Header Styling */
 header {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center elements */
     justify-content: space-between;
     background-color: #84E291;
     padding: 1rem 2rem;
-    color: white;
-    height: 100px;
+    height: 100px; /* Fixed height for consistency */
     position: relative;
     flex-wrap: wrap; /* Allow elements to stack on smaller screens */
 }
 
-header .logo {
+header .logo img {
     height: 50px; /* Adjust logo size */
+    object-fit: contain; /* Maintain proportions */
 }
 
 nav {
     display: flex;
-    justify-content: center; /* Center the nav items */
-    flex-grow: 2; /* Allow nav to take space equally */
+    justify-content: center;
+    flex-grow: 2;
 }
 
 #menu {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 2rem; /* Spacing between menu items */
+    gap: 2rem;
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 #menu li {
-    position: relative; /* For dropdown positioning */
+    position: relative;
 }
 
 #menu a {
@@ -77,14 +77,13 @@ nav {
     margin-top: 0.5rem;
     left: 0;
     z-index: 10;
-    width: max-content; /* Ensure it doesn't collapse */
+    width: max-content;
 }
 
 #menu li:hover .dropdown {
-    display: block; /* Keep dropdown visible on hover */
+    display: block;
 }
 
-/* Ensures dropdown stays visible even when moving the cursor over it */
 .dropdown:hover {
     display: block;
 }
@@ -112,7 +111,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    margin-top: 1rem; /* Adjust for smaller screens */
+    margin-top: 1rem;
 }
 
 .cta-button:hover {
@@ -137,15 +136,14 @@ footer {
     }
 
     nav {
-        margin-bottom: 1rem;
-    }
-
-    #menu {
-        flex-direction: column; /* Stack menu items vertically */
-        gap: 1rem; /* Adjust gap for readability */
+        margin: 1rem 0;
     }
 
     .cta-button {
         margin: 1rem 0;
+    }
+
+    header .logo img {
+        height: 40px;
     }
 }
