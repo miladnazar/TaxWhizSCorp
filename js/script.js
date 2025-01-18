@@ -1,7 +1,7 @@
 // Hamburger Menu Toggle
 const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('#menu-container'); // Correctly target the menu container
+const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
 hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open'); // Toggle the 'open' class to show/hide the menu
+    mobileMenuOverlay.classList.toggle('open'); // Toggle the 'open' class
 });
