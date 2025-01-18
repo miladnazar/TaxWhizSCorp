@@ -27,7 +27,7 @@ header {
 
 header .logo {
     height: 60px; /* Slightly smaller logo */
-    margin-left: 20px; /* Adds space to the left of the logo */
+    margin-right: 20px;
 }
 
 .hamburger-menu {
@@ -45,11 +45,11 @@ header .logo {
 
 /* Navigation Menu Styles */
 #menu {
-    display: flex; /* Arrange items in a horizontal row */
+    display: flex; /* Arrange items in a single horizontal row */
     list-style: none; /* Remove bullet points */
+    gap: 2rem; /* Add spacing between menu items */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    gap: 2rem; /* Add spacing between menu items */
 }
 
 #menu li {
@@ -60,7 +60,7 @@ header .logo {
     color: black; /* Menu item color */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Make the text bold */
-    padding: 0.5rem 1rem; /* Add some padding for click area */
+    padding: 0.5rem 1rem; /* Add some padding for clickable area */
     border-radius: 5px; /* Optional: Rounded corners */
 }
 
@@ -147,14 +147,14 @@ footer {
     }
 
     #menu {
-        display: none;
-        flex-direction: column;
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically on mobile */
         background: #E68900;
         width: 100%;
     }
 
     #menu-toggle:checked + #menu {
-        display: flex;
+        display: flex; /* Show menu on toggle */
     }
 
     #menu li {
