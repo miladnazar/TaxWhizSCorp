@@ -1,13 +1,11 @@
-// Contact form functionality
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Thank you for contacting Tax Whiz! We will get back to you shortly.');
-});
+// Mobile menu toggle functionality
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
 
-// Payment button functionality
-const paymentButton = document.getElementById('stripe-payment-button');
-if (paymentButton) {
-    paymentButton.addEventListener('click', function () {
-        alert('Redirecting to payment gateway...');
-    });
-}
+menuToggle.addEventListener('change', function() {
+    if (menuToggle.checked) {
+        menu.style.display = 'flex'; // Show menu on mobile
+    } else {
+        menu.style.display = 'none'; // Hide menu on mobile
+    }
+});
