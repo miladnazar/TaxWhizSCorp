@@ -27,6 +27,8 @@ header {
 
 header .logo {
     height: 60px; /* Adjust logo size */
+    display: flex; /* Ensure logo container aligns */
+    align-items: center; /* Vertically center the logo inside its container */
 }
 
 nav {
