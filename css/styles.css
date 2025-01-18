@@ -24,17 +24,25 @@ header {
     position: relative;
 }
 
+/* Logo Styling */
 header .logo img {
     height: 50px;
-    object-fit: contain;
+}
+
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #173D06;
+    cursor: pointer;
 }
 
 /* Navigation */
 nav {
-    flex-grow: 1;
-    display: flex; /* Always visible on desktop */
-    justify-content: center;
-    margin: 0 1rem;
+    display: flex;
+    align-items: center;
 }
 
 #menu {
@@ -73,23 +81,6 @@ nav {
     color: white;
 }
 
-/* Hamburger Menu */
-#hamburger {
-    display: none; /* Hidden by default (desktop) */
-    background: none;
-    border: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 0.3rem;
-}
-
-#hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #173D06;
-    border-radius: 3px;
-}
-
 /* Dropdown Styling */
 .dropdown {
     display: none;
@@ -105,47 +96,33 @@ nav {
     display: block;
 }
 
-/* Mobile Menu */
-nav {
-    display: none; /* Hidden by default on mobile */
-    flex-direction: column;
-    background-color: #84E291;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-}
-
-nav.open {
-    display: flex; /* Show when toggled */
-}
-
-#menu {
-    flex-direction: column;
-    gap: 1rem;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     #hamburger {
-        display: flex; /* Show hamburger button on mobile */
+        display: block; /* Show hamburger on mobile */
     }
 
     nav {
-        display: none; /* Hidden by default on mobile */
+        display: none; /* Hide menu on mobile by default */
+        flex-direction: column;
+        background-color: #84E291;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
     }
 
     nav.open {
-        display: flex; /* Show when toggled */
+        display: flex; /* Show menu when open */
     }
 
     #menu {
-        flex-direction: column; /* Stack items */
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .cta-button {
         margin-top: 1rem;
-        text-align: center;
     }
 }
