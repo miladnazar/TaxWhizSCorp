@@ -2,8 +2,8 @@
 const hamburger = document.getElementById('hamburger');
 const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 const menuLinks = document.querySelectorAll('#mobile-menu a');
-const servicesMenu = document.getElementById('services-submenu');
 const servicesLink = document.getElementById('services-link');
+const servicesMenu = document.getElementById('services-submenu');
 
 // Toggle mobile menu visibility
 hamburger.addEventListener('click', () => {
