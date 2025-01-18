@@ -8,11 +8,10 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    color: #173D06;
+    margin: 0 auto;
+    color: #173D06; /* Green tone from logo */
     background-color: #f9f9f9;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* Header Styling */
@@ -20,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #E68900; /* Contrasting banner color */
+    background-color: #E68900; /* Orange from logo */
     padding: 1rem;
     color: white;
 }
@@ -60,14 +59,16 @@ header .logo {
 
 .cta-button {
     background: white;
-    color: #E68900;
+    color: #173D06; /* Dark green tone */
     padding: 0.5rem 1rem;
+    border: 2px solid #173D06;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .cta-button:hover {
-    background: #FFCC66;
+    background: #E68900; /* Orange hover effect */
+    color: white;
 }
 
 /* Hero Section */
@@ -93,7 +94,7 @@ header .logo {
 .service-item {
     background: white;
     padding: 1rem;
-    border: 1px solid #E68900;
+    border: 2px solid #E68900;
     border-radius: 5px;
 }
 
@@ -103,9 +104,22 @@ header .logo {
     margin: 0 auto;
 }
 
+#contact button {
+    background-color: #173D06;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #E68900;
+}
+
 /* Footer */
 footer {
-    background: #173D06;
+    background: #173D06; /* Dark green */
     color: white;
     text-align: center;
     padding: 1rem;
