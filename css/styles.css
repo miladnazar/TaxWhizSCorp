@@ -100,7 +100,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    background: url('../img/hero-bg.jpg') no-repeat center center/contain;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,16 +109,6 @@ nav {
     text-align: center;
     color: white;
     padding: 0 1rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
 }
 
 /* Responsive Design */
@@ -149,5 +139,9 @@ nav {
 
     .cta-button {
         margin-top: 1rem;
+    }
+
+    .hero {
+        background-size: contain;
     }
 }
