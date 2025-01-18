@@ -16,36 +16,33 @@ body {
 
 /* Header Styling */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #84E291; /* Green background for header */
+    display: flex; /* Enable flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space items horizontally */
+    background-color: #84E291; /* Green background */
     padding: 1rem 2rem;
     color: white;
-    height: 120px;
+    height: auto;
 }
 
 header .logo {
     height: 60px; /* Adjust logo size */
-    display: flex; /* Ensure logo container aligns */
-    align-items: center; /* Vertically center the logo inside its container */
 }
 
 nav {
-    flex-grow: 1; /* Allow the nav to fill remaining space */
+    flex-grow: 1; /* Let navigation take up remaining space */
 }
 
 #menu {
     display: flex; /* Arrange menu items horizontally */
     list-style: none; /* Remove bullet points */
-    justify-content: flex-end; /* Align menu items to the right */
-    gap: 2rem; /* Space between items */
+    gap: 2rem; /* Space between menu items */
     margin: 0;
     padding: 0;
 }
 
 #menu li {
-    display: inline-block;
+    display: inline-block; /* Ensure items are inline */
 }
 
 #menu a {
@@ -63,6 +60,7 @@ nav {
 }
 
 .cta-button {
+    margin-left: 2rem; /* Add space between navigation and button */
     background: #84E291;
     color: #173D06; /* Dark green */
     padding: 0.5rem 1.5rem;
