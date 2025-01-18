@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Whiz | Expert Tax Preparation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Tax Whiz</h1>
-            <p>Your Trusted Partner in Tax Preparation</p>
-        </div>
         <nav>
             <ul>
+                <li><img src="images/logo.png" alt="Tax Whiz Logo" class="logo"></li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -61,6 +60,12 @@
             </ul>
         </section>
 
+        <section id="schedule">
+            <h2>Schedule a Meeting</h2>
+            <p>Book a virtual 1-hour meeting with us to discuss your tax needs.</p>
+            <iframe src="https://calendly.com/your-calendly-link" width="100%" height="500" frameborder="0"></iframe>
+        </section>
+
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contact-form">
@@ -76,12 +81,26 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
+
+        <section id="payment">
+            <h2>Make a Payment</h2>
+            <button id="stripe-payment-button">Pay Now</button>
+        </section>
+
+        <section id="file-upload">
+            <h2>Upload Your Documents</h2>
+            <form id="upload-form">
+                <label for="file">Choose File:</label>
+                <input type="file" id="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.xls,.xlsx" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>© 2025 Tax Whiz. All rights reserved. | Privacy Policy</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
