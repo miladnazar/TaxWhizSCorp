@@ -31,16 +31,34 @@ header {
     width: auto;
 }
 
-/* Hamburger Button */
-#hamburger {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #173D06;
-    cursor: pointer;
+/* Desktop Navigation */
+#desktop-menu {
+    display: none; /* Hidden by default for mobile */
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* CTA Button */
+#desktop-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#desktop-menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#desktop-menu a:hover {
+    background-color: #E68900;
+    color: white;
+}
+
 .cta-button {
     background: #84E291;
     color: #173D06;
@@ -48,19 +66,12 @@ header {
     border: 2px solid #173D06;
     border-radius: 5px;
     text-decoration: none;
-    text-align: center;
-    display: inline-block;
     transition: all 0.2s ease-in-out;
 }
 
 .cta-button:hover {
     background: #E68900;
     color: white;
-}
-
-.mobile-cta {
-    margin-top: 2rem;
-    display: block;
 }
 
 /* Mobile Menu Overlay */
@@ -98,32 +109,17 @@ header {
     font-size: 1.5rem;
 }
 
-/* Submenu Styling */
-.submenu {
-    display: none;
-    list-style: none;
-    padding-left: 1rem;
-    margin-top: 0.5rem;
-}
-
-.submenu.open {
-    display: block;
-}
-
-/* Hide Hamburger Icon on Desktop */
+/* Responsive Design */
 @media (min-width: 769px) {
     #hamburger {
         display: none;
     }
 
-    #mobile-menu-overlay {
-        display: none; /* Prevent mobile menu from appearing on desktop */
-    }
-}
-
-/* Desktop Navigation */
-@media (min-width: 769px) {
-    header {
+    #desktop-menu {
         display: flex;
+    }
+
+    #mobile-menu-overlay {
+        display: none;
     }
 }
