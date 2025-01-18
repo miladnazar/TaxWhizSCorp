@@ -20,18 +20,18 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #84E291;
-    padding: 0.5rem 1rem;  /* Reduced padding */
+    padding: 0.25rem 1rem;  /* Reduced padding to make header shorter */
     color: white;
-    height: auto;  /* Ensure the height adjusts based on content */
+    height: 60px; /* Fixed height */
 }
 
 header .logo {
-    height: 75px;
+    height: 50px;  /* Slightly smaller logo size */
     margin-left: 10px;  /* Adds space to the left of the logo */
 }
 
 .hamburger-menu {
-    display: none;  /* Hide the hamburger menu by default */
+    display: none;  /* Hide the hamburger menu by default on desktop */
     cursor: pointer;
 }
 
@@ -66,6 +66,7 @@ header .logo {
     border: 2px solid #173D06;
     border-radius: 5px;
     text-decoration: none;
+    align-self: center; /* Ensure button stays within the header */
 }
 
 .cta-button:hover {
@@ -129,8 +130,9 @@ footer {
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
+    /* Make hamburger menu appear on mobile */
     .hamburger-menu {
-        display: block;  /* Show hamburger menu on mobile */
+        display: block;
     }
 
     #menu {
