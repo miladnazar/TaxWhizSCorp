@@ -8,10 +8,10 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0 auto;
     color: #173D06; /* Green tone from logo */
     background-color: #CAEEFB; /* Light background color */
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header Styling */
@@ -20,53 +20,44 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #84E291; /* Green background for header */
-    padding: 0.5rem 2rem; /* Reduced padding to make header shorter */
+    padding: 1rem 2rem;
     color: white;
-    height: 110px; /* Fixed height */
+    height: auto;
 }
 
 header .logo {
-    height: 60px; /* Slightly smaller logo */
-    margin-right: 20px;
+    height: 60px; /* Adjust logo size */
 }
 
-.hamburger-menu {
-    display: none; /* Hide by default */
-    cursor: pointer;
+nav {
+    flex-grow: 1; /* Allow the nav to fill remaining space */
 }
 
-.hamburger-menu span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: white;
-}
-
-/* Navigation Menu Styles */
 #menu {
-    display: flex; /* Arrange items in a single horizontal row */
+    display: flex; /* Arrange menu items horizontally */
     list-style: none; /* Remove bullet points */
-    gap: 2rem; /* Add spacing between menu items */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    justify-content: flex-end; /* Align menu items to the right */
+    gap: 2rem; /* Space between items */
+    margin: 0;
+    padding: 0;
 }
 
 #menu li {
-    text-align: center; /* Center-align text inside menu items */
+    display: inline-block;
 }
 
 #menu a {
-    color: black; /* Menu item color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Make the text bold */
-    padding: 0.5rem 1rem; /* Add some padding for clickable area */
-    border-radius: 5px; /* Optional: Rounded corners */
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Optional rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 #menu a:hover {
     background-color: #E68900; /* Highlight color on hover */
-    color: white; /* Text color when hovered */
+    color: white;
 }
 
 .cta-button {
@@ -99,67 +90,10 @@ header .logo {
     border-radius: 5px;
 }
 
-/* Services Section */
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.service-item {
-    background: white;
-    padding: 1rem;
-    border: 2px solid #E68900;
-    border-radius: 5px;
-}
-
-/* Contact Section */
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact button {
-    background-color: #173D06;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #E68900;
-}
-
 /* Footer */
 footer {
     background: #173D06; /* Dark green */
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block; /* Show hamburger on mobile */
-    }
-
-    #menu {
-        display: none; /* Hide menu by default */
-        flex-direction: column; /* Stack items vertically on mobile */
-        background: #E68900;
-        width: 100%;
-    }
-
-    #menu-toggle:checked + #menu {
-        display: flex; /* Show menu on toggle */
-    }
-
-    #menu li {
-        text-align: left;
-        padding: 1rem;
-        border-bottom: 1px solid #fff;
-    }
 }
