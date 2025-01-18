@@ -21,7 +21,7 @@ header {
     align-items: center; /* Vertically align elements */
     justify-content: space-between; /* Space between logo, nav, and CTA */
     background-color: #84E291;
-    padding: 1rem; /* Consistent padding */
+    padding: 1rem;
     flex-wrap: wrap; /* Stack elements when space runs out */
     max-width: 100%; /* Ensure it fits within the screen width */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -33,14 +33,38 @@ header .logo img {
     object-fit: contain; /* Maintain proportions */
 }
 
-nav {
-    flex: 1; /* Take up remaining space */
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #173D06;
+    cursor: pointer;
+    z-index: 20; /* Ensure it's above other elements */
+}
+
+#hamburger:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Mobile Menu Hidden by Default */
+#mobile-menu {
     display: flex;
-    justify-content: center; /* Center navigation items */
-    flex-wrap: wrap; /* Allow wrapping */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    flex-direction: column; /* Stack menu items */
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 100%; /* Position below header */
+    left: 0;
+    background-color: #84E291;
+    width: 100%;
+    padding: 1rem;
+    display: none; /* Hide initially */
+}
+
+#mobile-menu.open {
+    display: flex; /* Show when toggled */
 }
 
 #menu {
@@ -157,24 +181,13 @@ footer {
         text-align: center; /* Adjust alignment for readability */
     }
 
-    nav {
-        margin: 1rem 0;
+    #hamburger {
+        display: block; /* Show hamburger button on mobile */
     }
 
-    #menu {
-        flex-direction: column; /* Stack menu items vertically */
-        gap: 1rem; /* Add spacing between items */
-    }
-
-    .cta-button {
-        margin: 1rem 0; /* Add spacing for separation */
-    }
-
-    header .logo img {
-        height: 40px; /* Scale down logo for smaller screens */
-    }
-
-    .hero h1 {
-        font-size: 1.5rem; /* Smaller heading for mobile */
+    #mobile-menu {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        width: 100%; /* Take full width */
     }
 }
