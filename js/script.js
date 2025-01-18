@@ -1,16 +1,33 @@
 // Hamburger Menu Toggle
 const hamburger = document.getElementById('hamburger');
-const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-const menuLinks = document.querySelectorAll('#mobile-menu a');
+const menuContainer = document.getElementById('menu-container');
 
-// Toggle mobile menu visibility
 hamburger.addEventListener('click', () => {
-    mobileMenuOverlay.classList.toggle('open');
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !isExpanded);
+    menuContainer.classList.toggle('open'); // Toggle the 'open' class
 });
 
-// Close the menu when clicking on a link
-menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenuOverlay.classList.remove('open');
+// Smooth Scrolling
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Active Link Highlighting
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLinks[index].classList.add('active');
+        }
     });
 });
