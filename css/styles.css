@@ -17,12 +17,12 @@ body {
 /* Header Styling */
 header {
     display: flex; /* Enable flexbox for layout */
-    align-items: right; /* Vertically align items */
+    align-items: center; /* Vertically align items */
     justify-content: space-between; /* Space items horizontally */
     background-color: #84E291; /* Green background */
     padding: 1rem 2rem;
     color: white;
-    height: 120px;
+    height: auto;
 }
 
 header .logo {
@@ -36,9 +36,10 @@ nav {
 #menu {
     display: flex; /* Arrange menu items horizontally */
     list-style: none; /* Remove bullet points */
-    gap: 0.5rem; /* Space between menu items */
+    gap: 2rem; /* Space between menu items */
     margin: 0;
     padding: 0;
+    flex-grow: 1; /* Push menu items to take available space */
 }
 
 #menu li {
@@ -59,8 +60,8 @@ nav {
     color: white;
 }
 
+/* CTA Button */
 .cta-button {
-    margin-left: 2rem; /* Add space between navigation and button */
     background: #84E291;
     color: #173D06; /* Dark green */
     padding: 0.5rem 1.5rem;
@@ -70,6 +71,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto; /* Push the button to the far right */
 }
 
 .cta-button:hover {
