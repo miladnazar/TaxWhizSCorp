@@ -21,28 +21,22 @@ header {
     justify-content: space-between;
     background-color: #84E291;
     padding: 1rem;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Logo Styling */
-header .logo img {
-    height: 50px;
-}
-
-/* Hamburger Button */
-#hamburger {
-    display: none; /* Hidden on desktop */
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #173D06;
-    cursor: pointer;
+.logo img {
+    max-height: 50px;
+    width: auto;
 }
 
 /* Navigation */
-nav {
+#menu-container {
+    flex: 2;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #menu {
@@ -57,7 +51,7 @@ nav {
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease-in-out;
 }
 
 #menu a:hover {
@@ -67,6 +61,7 @@ nav {
 
 /* CTA Button */
 .cta-button {
+    flex: 1;
     background: #84E291;
     color: #173D06;
     padding: 0.5rem 1.5rem;
@@ -74,11 +69,23 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .cta-button:hover {
     background: #E68900;
     color: white;
+}
+
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #173D06;
+    cursor: pointer;
 }
 
 /* Dropdown Styling */
@@ -102,7 +109,7 @@ nav {
         display: block; /* Show hamburger on mobile */
     }
 
-    nav {
+    #menu-container {
         display: none; /* Hide menu on mobile by default */
         flex-direction: column;
         background-color: #84E291;
@@ -113,7 +120,7 @@ nav {
         padding: 1rem;
     }
 
-    nav.open {
+    #menu-container.open {
         display: flex; /* Show menu when open */
     }
 
