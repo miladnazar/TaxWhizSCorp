@@ -22,7 +22,7 @@ header {
     background-color: #84E291; /* Green background */
     padding: 1rem 2rem;
     color: white;
-    height: auto;
+    height: 100px;
 }
 
 header .logo {
@@ -36,7 +36,7 @@ nav {
 #menu {
     display: flex; /* Arrange menu items horizontally */
     list-style: none; /* Remove bullet points */
-    gap: 2rem; /* Space between menu items */
+    gap: 0.5rem; /* Space between menu items */
     margin: 0;
     padding: 0;
 }
