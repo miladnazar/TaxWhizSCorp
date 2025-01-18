@@ -74,10 +74,15 @@ header {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .has-dropdown:hover .dropdown {
     display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown li {
@@ -146,13 +151,23 @@ header {
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+    #desktop-menu {
+        display: none; /* Hide desktop menu */
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
 @media (min-width: 769px) {
     #hamburger {
-        display: none;
+        display: none; /* Hide hamburger menu on desktop */
     }
 
     #desktop-menu {
-        display: flex;
+        display: flex; /* Show desktop menu */
     }
 
     #mobile-menu-overlay {
