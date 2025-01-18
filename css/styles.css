@@ -101,7 +101,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center/cover; /* Full screen for desktop */
+    background: url('../img/hero-bg.jpg') no-repeat center top/cover; /* Focus on the top part (your face) */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@ nav {
     text-align: center;
     color: white;
     padding: 0 1rem;
-    margin: 0; /* Ensure no gap between header and hero */
+    margin: 0; /* Ensure no gap */
 }
 
 /* Responsive Design for Mobile */
