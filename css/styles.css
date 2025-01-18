@@ -12,17 +12,17 @@ body {
     background-color: #CAEEFB;
     max-width: 100%;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styling */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Vertically align elements */
+    justify-content: space-between; /* Space between logo, nav, and CTA */
     background-color: #84E291;
     padding: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Stack elements when space runs out */
     position: relative;
     box-sizing: border-box;
 }
