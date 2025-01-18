@@ -74,12 +74,14 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
     background: #E68900;
     color: white;
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .dropdown {
