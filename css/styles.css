@@ -121,20 +121,33 @@ nav {
     margin-bottom: 2rem;
 }
 
-/* Hero Section Image */
-.hero img {
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto; /* Maintains aspect ratio */
-    width: 50%; /* For desktop: Adjust width to fit layout */
-    max-width: 400px; /* Limits size on large screens */
-    margin: 0 auto; /* Centers the image */
-    display: block;
-}
-
-/* Mobile Responsive Image Styling */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .hero img {
-        width: 80%; /* Scales down for smaller screens */
-        max-width: 300px; /* Further reduces max size on mobile */
+    #hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    nav {
+        display: none; /* Hide menu on mobile by default */
+        flex-direction: column;
+        background-color: #84E291;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    nav.open {
+        display: flex; /* Show menu when open */
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-button {
+        margin-top: 1rem;
     }
 }
