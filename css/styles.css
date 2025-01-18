@@ -19,17 +19,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #84E291; /* Money Green matching the Logo */
-    padding: 1rem;
+    background-color: #84E291;
+    padding: 0.5rem 1rem;  /* Reduced padding */
     color: white;
+    height: auto;  /* Ensure the height adjusts based on content */
 }
 
 header .logo {
     height: 75px;
+    margin-left: 10px;  /* Adds space to the left of the logo */
 }
 
 .hamburger-menu {
-    display: none;
+    display: none;  /* Hide the hamburger menu by default */
     cursor: pointer;
 }
 
@@ -128,7 +130,7 @@ footer {
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: block;
+        display: block;  /* Show hamburger menu on mobile */
     }
 
     #menu {
