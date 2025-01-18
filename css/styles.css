@@ -105,8 +105,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: top;
+    text-align: bottom;
     color: white;
     padding: 0 1rem;
 }
