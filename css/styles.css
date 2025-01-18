@@ -22,7 +22,7 @@ header {
     background-color: #84E291; /* Green background for header */
     padding: 0.5rem 2rem;  /* Reduced padding to make header shorter */
     color: white;
-    height: 80px; /* Fixed height */
+    height: 110px; /* Fixed height */
 }
 
 header .logo {
