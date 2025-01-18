@@ -24,6 +24,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    margin: 0; /* Ensure no gap with the hero section */
 }
 
 /* Logo Styling */
@@ -100,7 +101,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center/contain;
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover; /* Full screen for desktop */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,9 +110,10 @@ nav {
     text-align: center;
     color: white;
     padding: 0 1rem;
+    margin: 0; /* Ensure no gap between header and hero */
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     #hamburger {
         display: block; /* Show hamburger on mobile */
@@ -142,6 +144,7 @@ nav {
     }
 
     .hero {
-        background-size: contain;
+        background: url('../img/hero-bg.jpg') no-repeat center center/contain; /* Contain image for mobile */
+        background-color: #173D06; /* Add fallback in case image doesn't load */
     }
 }
