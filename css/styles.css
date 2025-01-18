@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #E6D7B9; /* Light Sand matching the Logo */
+    background-color: #CAEEFB; /* Light Blue matching the Logo */
     padding: 1rem;
     color: white;
 }
@@ -52,13 +52,13 @@ header .logo {
 }
 
 #menu a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 .cta-button {
-    background: white;
+    background: black;
     color: #173D06; /* Dark green tone */
     padding: 0.5rem 1rem;
     border: 2px solid #173D06;
