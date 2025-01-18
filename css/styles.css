@@ -17,8 +17,8 @@ body {
 /* Header Styling */
 header {
     display: flex;
-    align-items: center; /* Center elements vertically */
-    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    justify-content: space-between;
     background-color: #84E291;
     padding: 1rem;
     position: relative;
@@ -31,16 +31,16 @@ header .logo img {
 
 /* Navigation */
 nav {
-    flex-grow: 1; /* Allow nav to take up space */
-    display: flex; /* Flex layout for alignment */
-    justify-content: center; /* Center navigation items */
-    margin: 0 1rem; /* Add space between logo and button */
+    flex-grow: 1;
+    display: flex; /* Always visible on desktop */
+    justify-content: center;
+    margin: 0 1rem;
 }
 
 #menu {
     display: flex;
     list-style: none;
-    gap: 2rem; /* Space between navigation items */
+    gap: 2rem;
 }
 
 #menu a {
@@ -73,43 +73,79 @@ nav {
     color: white;
 }
 
-/* Mobile Menu Hidden by Default */
+/* Hamburger Menu */
+#hamburger {
+    display: none; /* Hidden by default (desktop) */
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+#hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #173D06;
+    border-radius: 3px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #84E291;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+#menu li:hover .dropdown {
+    display: block;
+}
+
+/* Mobile Menu */
 nav {
-    display: none; /* Hide menu on mobile */
+    display: none; /* Hidden by default on mobile */
     flex-direction: column;
     background-color: #84E291;
     position: absolute;
-    top: 100%; /* Below header */
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem;
 }
 
 nav.open {
-    display: flex; /* Show menu when toggled */
+    display: flex; /* Show when toggled */
 }
 
 #menu {
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column;
     gap: 1rem;
-}
-
-.cta-button {
-    margin-top: 1rem;
-    text-align: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     #hamburger {
-        display: block; /* Show hamburger button on mobile */
+        display: flex; /* Show hamburger button on mobile */
     }
 
     nav {
-        display: none; /* Hide menu by default */
+        display: none; /* Hidden by default on mobile */
     }
 
     nav.open {
-        display: flex; /* Show menu when toggled */
+        display: flex; /* Show when toggled */
+    }
+
+    #menu {
+        flex-direction: column; /* Stack items */
+    }
+
+    .cta-button {
+        margin-top: 1rem;
+        text-align: center;
     }
 }
