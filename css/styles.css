@@ -74,15 +74,10 @@ header {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
 }
 
 .has-dropdown:hover .dropdown {
     display: block;
-    opacity: 1;
-    visibility: visible;
 }
 
 .dropdown li {
@@ -97,6 +92,7 @@ header {
     color: black;
     text-decoration: none;
     font-weight: normal;
+    display: block; /* Ensure vertical listing */
 }
 
 /* CTA Button */
