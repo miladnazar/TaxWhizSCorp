@@ -110,7 +110,7 @@ nav {
     align-items: flex-start; /* Aligns content to the left */
     text-align: left; /* Align text to the left */
     color: white;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 /* Add the dimmed overlay */
@@ -138,10 +138,10 @@ nav {
 /* Paragraph Text Style */
 .hero p {
     font-family: 'Merriweather', serif; /* Serif font for paragraph */
-    font-size: 1.2rem; /* Adjust this value to make the text larger or smaller */
+    font-size: 2.2rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 1rem;
     margin-left: 1rem;
-    max-width: 800px; /* Control the width of the paragraph */
+    max-width: 400px; /* Control the width of the paragraph */
     position: relative;
     z-index: 2; /* Ensure the paragraph is above the overlay */
 }
