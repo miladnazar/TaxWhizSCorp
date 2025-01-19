@@ -103,11 +103,11 @@ nav {
 .hero {
     position: relative; /* Allow absolute positioning for overlay */
     background: url('../img/hero-bg.jpg') no-repeat top center/cover;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns content at the top */
-    align-items: flex-start; /* Aligns content to the left */
+    justify-content: flex-end; /* Align content to the bottom */
+    align-items: flex-start; /* Align content to the left */
     text-align: left; /* Align text to the left */
     color: white;
     padding: 1.5rem;
