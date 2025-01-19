@@ -186,12 +186,12 @@ nav {
 @media (max-width: 768px) {
     /* Smaller heading for mobile devices */
     .hero h1 {
-        font-size: 1.5rem; /* Smaller heading size for mobile */
+        font-size: 1rem; /* Smaller heading size for mobile */
     }
 
     /* Smaller paragraph font size for mobile */
     .hero p {
-        font-size: 1rem; /* Adjusted paragraph font size for mobile */
+        font-size: 0.5rem; /* Adjusted paragraph font size for mobile */
         margin-left: 1rem; /* Adjusted left margin for better alignment on small screens */
         max-width: 90%; /* Allow more space for paragraph text */
     }
