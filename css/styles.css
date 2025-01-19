@@ -191,7 +191,7 @@ nav {
 
     /* Smaller paragraph font size for mobile */
     .hero p {
-        font-size: 1rem; /* Adjusted paragraph font size for mobile */
+        font-size: 1.25rem; /* Adjusted paragraph font size for mobile */
         margin-left: 1rem; /* Adjusted left margin for better alignment on small screens */
         max-width: 90%; /* Allow more space for paragraph text */
     }
