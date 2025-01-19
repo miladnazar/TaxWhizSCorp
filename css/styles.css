@@ -129,7 +129,7 @@ nav {
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
     font-size: 3rem; /* Adjust this size as needed */
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-left: 0.25rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
@@ -146,41 +146,26 @@ nav {
     z-index: 2; /* Ensure the paragraph is above the overlay */
 }
 
-/* CTA Button */
-.cta-button, .cta-button-duplicate {
-    background: #84E291; /* Default background for the first button */
-    color: black; /* Font color white */
-    padding: 0.5rem 1.5rem;
-    border: 2px solid #173D06;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 1rem; /* Space between paragraph and buttons */
-    margin-right: 0.5rem; /* Adds space between buttons */
-    z-index: 2; /* Ensure buttons are above the overlay */
-    display: inline-block; /* Align buttons in a single line */
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Smaller heading for mobile devices */
+    .hero h1 {
+        font-size: 1rem; /* Smaller heading size for mobile */
+    }
 
-/* Modify the background and text color of the duplicate button */
-.cta-button-duplicate {
-    background: white; /* White background for the duplicate button */
-    color: black; /* Black text for the duplicate button */
-    border: 2px solid #000000; /* Black border for the button */
-}
+    /* Smaller paragraph font size for mobile */
+    .hero p {
+        font-size: 0.5rem; /* Adjusted paragraph font size for mobile */
+        margin-left: 1rem; /* Adjusted left margin for better alignment on small screens */
+        max-width: 90%; /* Allow more space for paragraph text */
+    }
 
-/* Hover effect for buttons */
-.cta-button:hover, .cta-button-duplicate:hover {
-    background: #E68900; /* Hover color changed to orange */
-    color: white; /* Font remains white on hover */
+    /* Ensure buttons stack properly on mobile */
+    .hero .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 1rem; /* Space between buttons */
+    }
 }
-
-/* Ensure the buttons appear in one line and are close together */
-.hero .cta-buttons {
-    display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    gap: 1rem; /* Adds space between buttons */
-}
-
 
 
 /* Responsive Design */
