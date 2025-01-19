@@ -129,7 +129,7 @@ nav {
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
     font-size: 3rem; /* Adjust this size as needed */
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 0.25rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
@@ -149,7 +149,7 @@ nav {
 /* CTA Button */
 .cta-button, .cta-button-duplicate {
     background: #84E291;
-    color: white; /* Font color changed to white */
+    color: black; /* Font color changed to white */
     padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
