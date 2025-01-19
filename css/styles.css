@@ -112,9 +112,11 @@ nav {
     padding: 0 1rem;
 }
 
-/* Adjust the position of the text */
+/* Heading 1 Style */
 .hero h1 {
-    margin-top: 30vh; /* Adjust this value to move the text down */
+    font-size: 3rem; /* Adjust this to make the text larger */
+    margin-top: 2rem; /* Adds space from the top */
+    margin-left: 1rem; /* Adds space from the left edge */
 }
 
 /* Responsive Design */
