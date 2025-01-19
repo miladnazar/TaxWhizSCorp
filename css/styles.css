@@ -106,7 +106,7 @@ nav {
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom by default */
+    justify-content: flex-end; /* Align content to the bottom */
     align-items: flex-start; /* Align content to the left */
     text-align: left; /* Align text to the left */
     color: white;
@@ -138,7 +138,7 @@ nav {
 /* Paragraph Text Style */
 .hero p {
     font-family: 'Arial', sans-serif; /* sans-serif font for paragraph */
-    font-size: 2.2rem; /* Adjust this value as needed */
+    font-size: 2.2rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     max-width: 500px; /* Control the width of the paragraph */
@@ -200,18 +200,5 @@ nav {
     .hero .cta-buttons {
         flex-direction: row; /* Keep buttons in one row on mobile */
         gap: 1rem; /* Space between buttons */
-    }
-
-    /* Position the buttons outside the background on mobile */
-    .hero .cta-buttons {
-        position: relative; /* Make the buttons relative */
-        top: 100%; /* Move the buttons below the background image */
-        margin-top: 2rem; /* Add space between the image and the buttons */
-    }
-
-    /* Adjust content layout to move it closer to the bottom of the background image */
-    .hero {
-        flex-direction: column-reverse; /* Reverse the order to place the content at the bottom */
-        justify-content: flex-end; /* Keep the content aligned at the bottom */
     }
 }
