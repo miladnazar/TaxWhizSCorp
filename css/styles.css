@@ -139,7 +139,7 @@ nav {
 .hero p {
     font-family: 'Arial', sans-serif; /* sans-serif font for paragraph */
     font-size: 1.9rem; /* Adjust this value to make the text larger or smaller */
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-left: 0.5rem;
     max-width: 500px; /* Control the width of the paragraph */
     position: relative;
