@@ -147,38 +147,33 @@ nav {
 }
 
 /* CTA Button */
-.cta-button {
+.cta-button, .cta-button-duplicate {
     background: #84E291;
-    color: #173D06;
+    color: white; /* Font color changed to white */
     padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    margin-top: 1rem; /* Adjust space between paragraph and button */
+    margin-top: 1rem; /* Space between paragraph and buttons */
+    margin-right: 0.5rem; /* Adds space between buttons */
+    z-index: 2; /* Ensure buttons are above the overlay */
+    display: inline-block; /* Align buttons in a single line */
 }
 
-.cta-button:hover {
-    background: #E68900;
-    color: white;
+/* Hover effect for buttons */
+.cta-button:hover, .cta-button-duplicate:hover {
+    background: #E68900; /* Hover color changed to orange */
+    color: white; /* Font remains white on hover */
 }
 
-/* Duplicate CTA Button */
-.cta-button-duplicate {
-    background: #84E291;
-    color: #173D06;
-    padding: 0.5rem 1.5rem;
-    border: 2px solid #173D06;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 1rem; /* Space between buttons */
+/* Ensure the buttons appear in one line and are close together */
+.hero .cta-buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 1rem; /* Adds space between buttons */
 }
 
-.cta-button-duplicate:hover {
-    background: #E68900;
-    color: white;
-}
 /* Responsive Design */
 @media (max-width: 768px) {
     #hamburger {
