@@ -103,11 +103,11 @@ nav {
 .hero {
     position: relative; /* Allow absolute positioning for overlay */
     background: url('../img/hero-bg.jpg') no-repeat top center/cover;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom */
-    align-items: flex-start; /* Align content to the left */
+    justify-content: flex-start; /* Aligns content at the top */
+    align-items: flex-start; /* Aligns content to the left */
     text-align: left; /* Align text to the left */
     color: white;
     padding: 1.5rem;
@@ -186,19 +186,52 @@ nav {
 @media (max-width: 768px) {
     /* Smaller heading for mobile devices */
     .hero h1 {
-        font-size: 1.5rem; /* Smaller heading size for mobile */
+        font-size: 2.5rem; /* Smaller heading size for mobile */
     }
 
     /* Smaller paragraph font size for mobile */
     .hero p {
-        font-size: 1.25rem; /* Adjusted paragraph font size for mobile */
+        font-size: 1.6rem; /* Adjusted paragraph font size for mobile */
         margin-left: 1rem; /* Adjusted left margin for better alignment on small screens */
         max-width: 90%; /* Allow more space for paragraph text */
     }
 
-    /* Ensure buttons stay in one row on mobile */
+    /* Ensure buttons stack properly on mobile */
     .hero .cta-buttons {
-        flex-direction: row; /* Keep buttons in one row on mobile */
+        flex-direction: column; /* Stack buttons vertically on mobile */
         gap: 1rem; /* Space between buttons */
+    }
+
+    /* Mobile navigation (hamburger) */
+    #hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    nav {
+        display: none; /* Hide menu on mobile by default */
+        flex-direction: column;
+        background-color: #84E291;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    nav.open {
+        display: flex; /* Show menu when open */
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-button {
+        margin-top: 1rem; /* Adjust space for the button */
+    }
+
+    .hero {
+        background-size: contain; /* Adjust background size for mobile */
     }
 }
