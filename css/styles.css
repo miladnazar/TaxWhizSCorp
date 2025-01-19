@@ -198,7 +198,7 @@ nav {
 
     /* Ensure buttons stack properly on mobile */
     .hero .cta-buttons {
-        flex-direction: column; /* Stack buttons vertically on mobile */
+        flex-direction: row; /* Stack buttons horizontally on mobile */
         gap: 1rem; /* Space between buttons */
     }
 
