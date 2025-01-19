@@ -148,8 +148,8 @@ nav {
 
 /* CTA Button */
 .cta-button, .cta-button-duplicate {
-    background: #84E291;
-    color: black; /* Font color changed to white */
+    background: #84E291; /* Default background for the first button */
+    color: white; /* Font color white */
     padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
@@ -159,6 +159,12 @@ nav {
     margin-right: 0.5rem; /* Adds space between buttons */
     z-index: 2; /* Ensure buttons are above the overlay */
     display: inline-block; /* Align buttons in a single line */
+}
+
+/* Modify the background and text color of the duplicate button */
+.cta-button-duplicate {
+    background: #000000; /* Black background for the duplicate button */
+    border: 2px solid #000000; /* Black border for consistency */
 }
 
 /* Hover effect for buttons */
@@ -173,6 +179,7 @@ nav {
     justify-content: flex-start; /* Align buttons to the left */
     gap: 1rem; /* Adds space between buttons */
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
