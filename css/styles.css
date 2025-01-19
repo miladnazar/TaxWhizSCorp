@@ -139,8 +139,8 @@ nav {
 .hero p {
     font-family: 'Arial', sans-serif; /* sans-serif font for paragraph */
     font-size: 2.2rem; /* Adjust this value to make the text larger or smaller */
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     max-width: 500px; /* Control the width of the paragraph */
     position: relative;
     z-index: 2; /* Ensure the paragraph is above the overlay */
