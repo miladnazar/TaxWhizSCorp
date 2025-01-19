@@ -129,8 +129,8 @@ nav {
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
     font-size: 3rem; /* Adjust this size as needed */
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
 }
