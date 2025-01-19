@@ -141,7 +141,7 @@ nav {
     font-size: 2.2rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 1rem;
     margin-left: 1rem;
-    max-width: 400px; /* Control the width of the paragraph */
+    max-width: 800px; /* Control the width of the paragraph */
     position: relative;
     z-index: 2; /* Ensure the paragraph is above the overlay */
 }
