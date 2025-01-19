@@ -186,12 +186,12 @@ nav {
 @media (max-width: 768px) {
     /* Smaller heading for mobile devices */
     .hero h1 {
-        font-size: 1.5rem; /* Smaller heading size for mobile */
+        font-size: 2.5rem; /* Smaller heading size for mobile */
     }
 
     /* Smaller paragraph font size for mobile */
     .hero p {
-        font-size: 1rem; /* Adjusted paragraph font size for mobile */
+        font-size: 1.6rem; /* Adjusted paragraph font size for mobile */
         margin-left: 1rem; /* Adjusted left margin for better alignment on small screens */
         max-width: 90%; /* Allow more space for paragraph text */
     }
@@ -201,11 +201,8 @@ nav {
         flex-direction: column; /* Stack buttons vertically on mobile */
         gap: 1rem; /* Space between buttons */
     }
-}
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
+    /* Mobile navigation (hamburger) */
     #hamburger {
         display: block; /* Show hamburger on mobile */
     }
@@ -231,10 +228,10 @@ nav {
     }
 
     .cta-button {
-        margin-top: 1rem;
+        margin-top: 1rem; /* Adjust space for the button */
     }
 
     .hero {
-        background-size: contain;
+        background-size: contain; /* Adjust background size for mobile */
     }
 }
