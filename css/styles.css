@@ -100,7 +100,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center/contain;
+    background: url('../img/hero-bg.jpg') no-repeat top center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
