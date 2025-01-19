@@ -101,15 +101,15 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat top center/cover;
-    height: 100vh;
+    background: url('../img/hero-bg.jpg') no-repeat top center/cover; /* Adjust background positioning and size */
+    height: 100vh; /* You can adjust this to a fixed height, e.g., height: 600px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start; /* Aligns content at the top */
+    align-items: flex-start; /* Aligns content to the left */
+    text-align: left; /* Align text to the left */
     color: white;
-    padding: 0 1rem;
+    padding: 2rem; /* Adds some space around the content */
 }
 
 /* Heading 1 Style */
