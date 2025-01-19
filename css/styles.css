@@ -101,22 +101,37 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-bg.jpg') no-repeat top center/cover; /* Adjust background positioning and size */
-    height: 100vh; /* You can adjust this to a fixed height, e.g., height: 600px; */
+    position: relative; /* Allow absolute positioning for overlay */
+    background: url('../img/hero-bg.jpg') no-repeat top center/cover;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns content at the top */
     align-items: flex-start; /* Aligns content to the left */
     text-align: left; /* Align text to the left */
     color: white;
-    padding: 1rem; /* Adds some space around the content */
+    padding: 2rem;
+}
+
+/* Add the dimmed overlay */
+.hero::before {
+    content: ''; /* Creates the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure the overlay is behind the text */
 }
 
 /* Heading 1 Style */
 .hero h1 {
-    font-size: 3rem; /* Adjust this to make the text larger */
-    margin-top: 2rem; /* Adds space from the top */
-    margin-left: 1rem; /* Adds space from the left edge */
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    position: relative; /* Ensure the text stays on top of the overlay */
+    z-index: 2; /* Make sure the text is above the overlay */
 }
 
 /* Responsive Design */
