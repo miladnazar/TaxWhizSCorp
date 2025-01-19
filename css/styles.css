@@ -127,11 +127,23 @@ nav {
 
 /* Heading 1 Style */
 .hero h1 {
-    font-size: 3rem;
+    font-family: 'Merriweather', serif; /* Serif font for heading */
+    font-size: 3rem; /* Adjust this size as needed */
     margin-top: 2rem;
     margin-left: 1rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
+}
+
+/* Paragraph Text Style */
+.hero p {
+    font-family: 'Merriweather', serif; /* Serif font for paragraph */
+    font-size: 1.2rem; /* Adjust this value to make the text larger or smaller */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    max-width: 800px; /* Control the width of the paragraph */
+    position: relative;
+    z-index: 2; /* Ensure the paragraph is above the overlay */
 }
 
 /* Responsive Design */
