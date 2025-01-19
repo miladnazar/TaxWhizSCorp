@@ -108,7 +108,7 @@ nav {
     justify-content: flex-start; /* Aligns content at the top */
     align-items: flex-start; /* Aligns content to the left */
     text-align: left; /* Align text to the left */
-    color: black;
+    color: white;
     padding: 1rem; /* Adds some space around the content */
 }
 
