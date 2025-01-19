@@ -128,7 +128,7 @@ nav {
 /* Heading 1 Style */
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
-    font-size: 2rem; /* Adjust this size as needed */
+    font-size: 2.1rem; /* Adjust this size as needed */
     margin-top: 1rem;
     margin-left: 0.25rem;
     position: relative; /* Ensure the text stays on top of the overlay */
@@ -138,7 +138,7 @@ nav {
 /* Paragraph Text Style */
 .hero p {
     font-family: 'Arial', sans-serif; /* sans-serif font for paragraph */
-    font-size: 2.2rem; /* Adjust this value to make the text larger or smaller */
+    font-size: 1.9rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     max-width: 500px; /* Control the width of the paragraph */
