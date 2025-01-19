@@ -149,7 +149,7 @@ nav {
 /* CTA Button */
 .cta-button, .cta-button-duplicate {
     background: #84E291; /* Default background for the first button */
-    color: white; /* Font color white */
+    color: black; /* Font color white */
     padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
@@ -186,12 +186,12 @@ nav {
 @media (max-width: 768px) {
     /* Smaller heading for mobile devices */
     .hero h1 {
-        font-size: 2.5rem; /* Smaller heading size for mobile */
+        font-size: 1.7rem; /* Smaller heading size for mobile */
     }
 
     /* Smaller paragraph font size for mobile */
     .hero p {
-        font-size: 1.6rem; /* Adjusted paragraph font size for mobile */
+        font-size: 1.35rem; /* Adjusted paragraph font size for mobile */
         margin-left: 1rem; /* Adjusted left margin for better alignment on small screens */
         max-width: 90%; /* Allow more space for paragraph text */
     }
