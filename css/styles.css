@@ -139,8 +139,8 @@ header .cta-button {
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
     font-size: 2.1rem; /* Adjust this size as needed */
-    margin-top: 1rem;
-    margin-left: 0.25rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
 }
