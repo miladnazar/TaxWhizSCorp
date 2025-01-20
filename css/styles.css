@@ -103,6 +103,7 @@ nav {
 .hero {
     position: relative; /* Allow absolute positioning for overlay */
     background: url('../img/hero-bg.jpg') no-repeat top center/cover;
+    background-color: #FFFFFF; /* White background to ensure the section is consistent */
     height: 100vh;
     display: flex;
     flex-direction: column;
