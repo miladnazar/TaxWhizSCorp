@@ -17,8 +17,8 @@ body {
 /* Header Styling */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Vertically align the content (logo, menu, button) */
+    justify-content: space-between; /* Aligns content at the left and right */
     background-color: #84E291;
     padding: 1rem;
     position: sticky;
