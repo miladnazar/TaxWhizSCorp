@@ -125,24 +125,6 @@ header .cta-button {
     margin: 0 auto; /* Center the section horizontally */
 }
 
-/* Adjust the position of the content (heading, paragraph, buttons) */
-.hero {
-    justify-content: flex-start; /* Moves content to the top of the screen */
-    padding-top: 5rem; /* Adjust the padding-top to move content closer to the top */
-}
-
-/* Add the dimmed overlay on the background image only */
-.hero::before {
-    content: ''; /* Creates the overlay */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%; /* Ensure the overlay only covers the background image */
-    background: rgba(0, 0, 0, 0.55); /* Black overlay with 55% opacity */
-    z-index: 1; /* Ensure the overlay is behind the text */
-}
-
 /* Heading 1 Style */
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
