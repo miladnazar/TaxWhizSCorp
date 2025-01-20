@@ -116,11 +116,13 @@ header .cta-button {
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
+    justify-content: center; /* Vertically center the content */
+    align-items: flex-start; /* Align content to the left part of the center */
+    text-align: left; /* Align text to the left */
     color: white;
     padding: 1.5rem;
+    max-width: 1200px; /* Optional: Limit the max width */
+    margin: 0 auto; /* Center the section horizontally */
 }
 
 /* Add the dimmed overlay on the background image only */
