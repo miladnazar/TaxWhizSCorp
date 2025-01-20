@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Styling */
+/* Header Styling - Desktop */
 header {
     display: flex;
     align-items: center; /* Vertically center the logo, menu, and button */
