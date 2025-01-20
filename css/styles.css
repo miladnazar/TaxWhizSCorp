@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #173D06;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Ensure white background for both desktop and mobile */
     margin: 0;
     overflow-x: hidden;
 }
@@ -30,7 +30,6 @@ header {
 header .logo img {
     height: 50px;
 }
-
 
 /* Hamburger Button */
 #hamburger {
@@ -204,16 +203,6 @@ nav {
         gap: 1rem; /* Space between buttons */
     }
 
-    /* Mobile Styles */
-@media (max-width: 768px) {
-    body {
-        background-color: #FFFFFF; /* Ensure white background for mobile */
-    }
-
-    .hero {
-        background-color: #FFFFFF; /* Set white background for hero section on mobile as well */
-    }
-}
     /* Mobile navigation (hamburger) */
     #hamburger {
         display: block; /* Show hamburger on mobile */
