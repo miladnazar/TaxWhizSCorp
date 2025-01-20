@@ -67,7 +67,7 @@ nav {
     color: white;
 }
 
-/* CTA Button */
+/* Button Styling */
 .cta-button {
     background: #84E291;
     color: #173D06;
@@ -76,8 +76,14 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    font-weight: bold; /* Make the font bold */
-    align-items: center;
+    margin-top: 0; /* Reset any margin to align it properly */
+    margin-bottom: 0; /* Ensure no bottom margin */
+    z-index: 2;
+}
+
+/* Ensure buttons align properly with logo and nav items */
+header .cta-button {
+    margin-left: 2rem; /* Optional: Adds some space between the button and the menu */
 }
 
 .cta-button:hover {
