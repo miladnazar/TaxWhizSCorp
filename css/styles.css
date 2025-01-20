@@ -17,7 +17,7 @@ body {
 /* Header Styling */
 header {
     display: flex;
-    align-items: center; /* Vertically align the content (logo, menu, button) */
+    align-items: center; /* Vertically center the logo, menu, and button */
     justify-content: space-between; /* Aligns content at the left and right */
     background-color: #84E291;
     padding: 1rem;
@@ -67,7 +67,7 @@ nav {
     color: white;
 }
 
-/* Button Styling */
+/* CTA Button */
 .cta-button {
     background: #84E291;
     color: #173D06;
@@ -76,16 +76,18 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    margin-top: 0; /* Reset any margin to align it properly */
-    margin-bottom: 0; /* Ensure no bottom margin */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
     z-index: 2;
+    font-weight: bold; /* Make the font bold */
 }
 
 /* Ensure buttons align properly with logo and nav items */
 header .cta-button {
-    margin-left: 2rem; /* Optional: Adds some space between the button and the menu */
+    margin-left: 2rem; /* Adds some space between the button and the menu */
 }
 
+/* Hover effect for buttons */
 .cta-button:hover {
     background: #E68900;
     color: white;
