@@ -204,6 +204,16 @@ nav {
         gap: 1rem; /* Space between buttons */
     }
 
+    /* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        background-color: #FFFFFF; /* Ensure white background for mobile */
+    }
+
+    .hero {
+        background-color: #FFFFFF; /* Set white background for hero section on mobile as well */
+    }
+}
     /* Mobile navigation (hamburger) */
     #hamburger {
         display: block; /* Show hamburger on mobile */
