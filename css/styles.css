@@ -116,9 +116,9 @@ header .cta-button {
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns content at the top */
-    align-items: flex-start; /* Aligns content to the left */
-    text-align: left; /* Align text to the left */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
     color: white;
     padding: 1.5rem;
 }
@@ -139,8 +139,8 @@ header .cta-button {
 .hero h1 {
     font-family: 'Arial', sans-serif; /* sans-serif font for heading */
     font-size: 2.1rem; /* Adjust this size as needed */
-    margin-top: 3rem;
-    margin-left: 6rem;
+    margin-top: 1rem;
+    margin-left: 0.25rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
 }
