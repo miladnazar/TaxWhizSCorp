@@ -76,6 +76,7 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    font-weight: bold; /* Make the font bold */
 }
 
 .cta-button:hover {
@@ -149,7 +150,7 @@ nav {
 /* CTA Button */
 .cta-button, .cta-button-duplicate {
     background: #E68900; /* Default background for the first button */
-    color: white; /* Font color white */
+    color: black; /* Font color white */
     padding: 0.5rem 1.5rem;
     border: 2px solid #173D06;
     border-radius: 5px;
@@ -159,19 +160,22 @@ nav {
     margin-right: 0.5rem; /* Adds space between buttons */
     z-index: 2; /* Ensure buttons are above the overlay */
     display: inline-block; /* Align buttons in a single line */
+    font-weight: bold; /* Make the font bold */
 }
 
 /* Modify the background and text color of the duplicate button */
 .cta-button-duplicate {
-    background: #84E291; /* White background for the duplicate button */
-    color: black; /* Black text for the duplicate button */
+    background: black; /* White background for the duplicate button */
+    color: white; /* Black text for the duplicate button */
     border: 2px solid black; /* Black border for the button */
+    font-weight: bold; /* Make the font bold */
 }
 
 /* Hover effect for buttons */
 .cta-button:hover, .cta-button-duplicate:hover {
     background: #84E291; /* Hover color changed to orange */
     color: black; /* Font remains white on hover */
+    font-weight: bold; /* Make the font bold */
 }
 
 /* Ensure the buttons appear in one line and are close together */
