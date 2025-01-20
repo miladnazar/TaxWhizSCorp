@@ -114,16 +114,15 @@ nav {
 }
 
 /* Add the dimmed overlay on the background image only */
-.hero::after {
+.hero::before {
     content: ''; /* Creates the overlay */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 100%; /* Ensure the overlay only covers the background image */
     background: rgba(0, 0, 0, 0.55); /* Black overlay with 55% opacity */
     z-index: 1; /* Ensure the overlay is behind the text */
-    height: 100%; /* Make sure the overlay is applied only on the image */
 }
 
 /* Heading 1 Style */
