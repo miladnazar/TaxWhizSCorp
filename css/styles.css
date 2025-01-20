@@ -102,8 +102,8 @@ nav {
 .hero {
     position: relative; /* Allow absolute positioning for overlay */
     background: url('../img/hero-bg.jpg') no-repeat top center/cover;
-    background-color: #FFFFFF; /* White background to ensure the section is consistent */
-    height: 100vh;
+    background-color: #FFFFFF; /* White background below the image */
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns content at the top */
@@ -113,8 +113,8 @@ nav {
     padding: 1.5rem;
 }
 
-/* Add the dimmed overlay to the background image only */
-.hero::before {
+/* Add the dimmed overlay on the background image only */
+.hero::after {
     content: ''; /* Creates the overlay */
     position: absolute;
     top: 0;
@@ -123,7 +123,7 @@ nav {
     bottom: 0;
     background: rgba(0, 0, 0, 0.55); /* Black overlay with 55% opacity */
     z-index: 1; /* Ensure the overlay is behind the text */
-    height: 100%; /* Ensure it only covers the background image */
+    height: 100%; /* Make sure the overlay is applied only on the image */
 }
 
 /* Heading 1 Style */
