@@ -129,7 +129,7 @@ header .cta-button {
 @media (min-width: 769px) {
     .hero {
         justify-content: flex-start; /* Keeps content towards the top but slightly lower */
-        padding-top: 6rem; /* Moves the content a bit lower */
+        padding-top: 3rem; /* Moves the content a bit lower */
     }
 
     .hero h1, .hero p, .cta-button {
