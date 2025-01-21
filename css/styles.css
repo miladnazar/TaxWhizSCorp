@@ -128,37 +128,19 @@ header .cta-button {
 /* Center content horizontally but left-align text and buttons in the hero */
 @media (min-width: 769px) {
     .hero {
-        justify-content: flex-start; /* Aligns content to the top but slightly lower */
-        padding-top: 6rem; /* Moves the content a bit lower */
-        align-items: flex-start; /* Align content to the left */
+        justify-content: flex-start; /* Keeps content towards the top but slightly lower */
+        padding-top: 10rem; /* Moves the content a bit lower */
     }
 
-    /* Heading alignment */
-    .hero h1 {
+    .hero h1, .hero p, .cta-button {
         text-align: left; /* Align text to the left */
-        margin-left: 6rem; /* Adds 6rem space from the left edge */
-        margin-top: 0; /* Remove any unwanted top margin */
+        margin-left: 2rem; /* Adds space from the left edge */
     }
 
-    /* Paragraph alignment */
-    .hero p {
-        text-align: left; /* Align text to the left */
-        margin-left: 6rem; /* Adds 6rem space from the left edge */
-        margin-top: 6rem; /* Adds 6rem space between heading and paragraph */
-    }
-
-    /* Button alignment */
-    .cta-button {
-        text-align: left; /* Align text to the left */
-        margin-left: 6rem; /* Adds 6rem space from the left edge */
-        margin-top: 6rem; /* Adds 6rem space between paragraph and button */
-    }
-
-    /* Ensure buttons align properly in a row */
     .hero .cta-buttons {
-        display: flex;
-        justify-content: flex-start; /* Align buttons to the left */
-        gap: 1rem; /* Adds space between buttons */
+        flex-direction: row;
+        justify-content: flex-start; /* Buttons aligned left */
+        gap: 1rem;
     }
 }
 
