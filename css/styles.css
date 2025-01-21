@@ -125,6 +125,25 @@ header .cta-button {
     margin: 0 auto; /* Center the section horizontally */
 }
 
+/* Center content horizontally but left-align text and buttons in the hero */
+@media (min-width: 769px) {
+    .hero {
+        justify-content: flex-start; /* Keeps content towards the top but slightly lower */
+        padding-top: 10rem; /* Moves the content a bit lower */
+    }
+
+    .hero h1, .hero p, .cta-button {
+        text-align: left; /* Align text to the left */
+        margin-left: 2rem; /* Adds space from the left edge */
+    }
+
+    .hero .cta-buttons {
+        flex-direction: row;
+        justify-content: flex-start; /* Buttons aligned left */
+        gap: 1rem;
+    }
+}
+
 /* Heading 1 Style */
 .hero h1 {
     font-family: 'Georgia', sans-serif; /* sans-serif font for heading */
@@ -152,8 +171,6 @@ header .cta-button {
         0 0 10px rgba(0, 0, 0, 0.5),  /* Glowing effect around the text */
         0 0 15px rgba(0, 0, 0, 0.3);  /* Additional spread for more depth */
 }
-
-
 
 /* CTA Button */
 .cta-button, .cta-button-duplicate {
