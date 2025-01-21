@@ -110,30 +110,26 @@ header .cta-button {
 
 /* Hero Section */
 .hero {
-    position: relative; /* Allow absolute positioning for overlay */
-    background: url('../img/hero-bg.jpg') no-repeat top center/cover;
-    background-color: #FFFFFF; /* White background below the image */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Aligns content at the top */
-    align-items: flex-start; /* Aligns content to the left part of the center */
-    text-align: left; /* Align text to the left */
-    color: white;
-    padding: 1.5rem;
-    width: 100%; /* Ensure the hero takes the full width of the screen */
-    margin: 0 auto; /* Center the section horizontally */
+  position: relative; /* Allow absolute positioning for overlay */
+  background: url('../img/hero-bg.jpg') no-repeat top center/cover;
+  background-color: #FFFFFF; /* White background below the image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content at the top */
+  align-items: flex-start; /* Aligns content to the left part of the center */
+  text-align: left; /* Align text to the left */
+  color: white;
+  padding: 1.5rem;
+  width: 100%; /* Ensure the hero takes the full width of the screen */
+  margin: 0 auto; /* Center the section horizontally */
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-}
-
+/* Call Today section */
 .call-today {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px; /* Adjust top position */
+  right: 20px; /* Adjust right position */
   font-size: 16px;
   background-color: #fff;
   padding: 10px;
@@ -146,6 +142,7 @@ header .cta-button {
   text-decoration: none;
   font-weight: bold;
 }
+
 
 /* Center content horizontally but left-align text and buttons in the hero */
 @media (min-width: 769px) {
