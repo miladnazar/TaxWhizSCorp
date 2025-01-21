@@ -1,3 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', sans-serif;
+    line-height: 1.6;
+    color: #173D06;
+    background-color: #FFFFFF; /* Ensure white background for both desktop and mobile */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header Styling - Desktop */
+header {
+    display: flex;
+    align-items: center; /* Vertically center the logo, menu, and button */
+    justify-content: space-between; /* Aligns content at the left and right */
+    background-color: #84E291;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo Styling */
+header .logo img {
+    height: 50px;
+}
+
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #173D06;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover, #menu a.active {
+    background-color: #E68900;
+    color: white;
+}
+
+/* CTA Button */
+.cta-button {
+    background: #84E291;
+    color: #173D06;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #173D06;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+    z-index: 2;
+    font-weight: bold; /* Make the font bold */
+}
+
+/* Ensure buttons align properly with logo and nav items */
+header .cta-button {
+    margin-left: 2rem; /* Adds some space between the button and the menu */
+}
+
+/* Hover effect for buttons */
+.cta-button:hover {
+    background: #E68900;
+    color: white;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #84E291;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+#menu li:hover .dropdown {
+    display: block;
+}
+
 /* Hero Section */
 .hero {
     position: relative; /* Allow absolute positioning for overlay */
