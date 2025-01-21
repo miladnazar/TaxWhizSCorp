@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Baskerville', sans-serif;
+    font-family: 'Georgia', sans-serif;
     line-height: 1.6;
     color: #173D06;
     background-color: #FFFFFF; /* Ensure white background for both desktop and mobile */
@@ -127,7 +127,7 @@ header .cta-button {
 
 /* Heading 1 Style */
 .hero h1 {
-    font-family: 'Baskerville', sans-serif; /* sans-serif font for heading */
+    font-family: 'Georgia', sans-serif; /* sans-serif font for heading */
     font-size: 2.1rem; /* Adjust this size as needed */
     margin-top: 1rem;
     margin-left: 0.25rem;
@@ -138,7 +138,7 @@ header .cta-button {
 
 /* Paragraph Text Style */
 .hero p {
-    font-family: 'Baskerville', sans-serif; /* sans-serif font for paragraph */
+    font-family: 'Georgia', sans-serif; /* sans-serif font for paragraph */
     font-size: 1.9rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 1rem;
     margin-left: 0.5rem;
