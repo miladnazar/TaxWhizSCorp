@@ -117,7 +117,7 @@ header .cta-button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns content at the top */
-    align-items: center; /* Center content horizontally */
+    align-items: flex-start; /* Aligns content to the left part of the center */
     text-align: left; /* Align text to the left */
     color: white;
     padding: 1.5rem;
@@ -128,8 +128,8 @@ header .cta-button {
 /* Ensure all elements inside hero align to the left */
 @media (min-width: 769px) {
     .hero {
-        justify-content: flex-start; /* Align content at the top but slightly lower */
-        padding-top: 10rem; /* Moves the content a bit lower */
+        justify-content: flex-start; /* Align content at the top and left */
+        padding-top: 7rem; /* Moves the content a bit lower */
     }
 
     /* Align the heading, paragraph, and buttons to the left */
