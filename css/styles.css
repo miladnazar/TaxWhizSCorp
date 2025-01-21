@@ -129,7 +129,7 @@ header .cta-button {
 @media (min-width: 769px) {
     .hero {
         justify-content: flex-start; /* Keeps content towards the top but slightly lower */
-        padding-top: 8rem; /* Moves the content a bit lower */
+        padding-top: 6rem; /* Moves the content a bit lower */
     }
 
     .hero h1, .hero p, .cta-button {
@@ -181,7 +181,7 @@ header .cta-button {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    margin-top: 1rem; /* Space between paragraph and buttons */
+    margin-top: 4rem; /* Space between paragraph and buttons */
     margin-right: 0.5rem; /* Adds space between buttons */
     z-index: 2; /* Ensure buttons are above the overlay */
     display: inline-block; /* Align buttons in a single line */
