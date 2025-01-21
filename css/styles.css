@@ -125,13 +125,14 @@ header .cta-button {
     margin: 0 auto; /* Center the section horizontally */
 }
 
-/* Center content horizontally but left-align text and buttons in the hero */
+/* Desktop Styles (Only applies to screens 769px and larger) */
 @media (min-width: 769px) {
     .hero {
         justify-content: flex-start; /* Keeps content towards the top but slightly lower */
         padding-top: 6rem; /* Moves the content a bit lower */
     }
 
+    /* Align the heading, paragraph, and buttons to the left */
     .hero h1, .hero p, .cta-button {
         text-align: left; /* Align text to the left */
         margin-left: 6rem; /* Adds space from the left edge */
@@ -149,7 +150,6 @@ header .cta-button {
     font-family: 'Georgia', sans-serif; /* sans-serif font for heading */
     font-size: 2.1rem; /* Adjust this size as needed */
     margin-top: 1rem;
-    margin-left: 6rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow for clarity */
@@ -160,7 +160,6 @@ header .cta-button {
     font-family: 'Georgia', sans-serif; /* sans-serif font for paragraph */
     font-size: 1.9rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 4rem;
-    margin-left: 6rem;
     max-width: 500px; /* Control the width of the paragraph */
     position: relative;
     z-index: 2; /* Ensure the paragraph is above the overlay */
@@ -203,16 +202,13 @@ header .cta-button {
     font-weight: bold; /* Make the font bold */
 }
 
-/* Ensure the buttons appear in one line and are close together */
-.hero .cta-buttons {
-    display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    gap: 1rem; /* Adds space between buttons */
-    z-index: 2; /* Ensure buttons are above the overlay */
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
+    /* Ensure mobile styles are not affected by desktop changes */
+    .hero {
+        background-size: contain; /* Adjust background size for mobile */
+    }
+
     /* Smaller heading for mobile devices */
     .hero h1 {
         font-size: 1.5rem; /* Smaller heading size for mobile */
@@ -259,9 +255,5 @@ header .cta-button {
 
     .cta-button {
         margin-top: 1rem; /* Adjust space for the button */
-    }
-
-    .hero {
-        background-size: contain; /* Adjust background size for mobile */
     }
 }
