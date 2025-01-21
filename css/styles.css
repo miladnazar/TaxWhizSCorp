@@ -125,23 +125,6 @@ header .cta-button {
   margin: 0 auto; /* Center the section horizontally */
 }
 
-/* Call Today section */
-.call-today {
-  position: absolute;
-  top: 20px; /* Adjust top position */
-  right: 20px; /* Adjust right position */
-  font-size: 16px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.call-today a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 
 /* Center content horizontally but left-align text and buttons in the hero */
