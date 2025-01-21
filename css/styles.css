@@ -273,3 +273,136 @@ header .cta-button {
         background-size: contain; /* Adjust background size for mobile */
     }
 }
+/* Mission Section */
+#mission {
+    background-color: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#mission .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#mission img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Services Section */
+#services {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#services .service {
+    margin-bottom: 2rem;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#services .service img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.testimonial p {
+    margin-bottom: 1rem;
+}
+
+/* Contact Form Section */
+#contact {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #E68900;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #84E291;
+}
+
+/* Footer Section */
+footer {
+    padding: 2rem 0;
+    background-color: #84E291;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
