@@ -117,7 +117,7 @@ header .cta-button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns content at the top */
-    align-items: flex-start; /* Aligns content to the left part of the center */
+    align-items: center; /* Center content horizontally */
     text-align: left; /* Align text to the left */
     color: white;
     padding: 1.5rem;
@@ -125,22 +125,26 @@ header .cta-button {
     margin: 0 auto; /* Center the section horizontally */
 }
 
-/* Center content horizontally but left-align text and buttons in the hero */
+/* Ensure all elements inside hero align to the left */
 @media (min-width: 769px) {
     .hero {
-        justify-content: flex-start; /* Keeps content towards the top but slightly lower */
+        justify-content: flex-start; /* Align content at the top but slightly lower */
         padding-top: 10rem; /* Moves the content a bit lower */
     }
 
-    .hero h1, .hero p, .cta-button {
+    /* Align the heading, paragraph, and buttons to the left */
+    .hero h1, .hero p, .cta-button, .cta-button-duplicate {
         text-align: left; /* Align text to the left */
-        margin-left: 2rem; /* Adds space from the left edge */
+        margin-left: 0; /* Remove any margin on the left */
+        width: 100%; /* Ensure elements take full width for alignment */
     }
 
+    /* Align buttons in a row and ensure they align with text */
     .hero .cta-buttons {
-        flex-direction: row;
-        justify-content: flex-start; /* Buttons aligned left */
-        gap: 1rem;
+        display: flex;
+        justify-content: flex-start; /* Align buttons to the left */
+        gap: 1rem; /* Space between buttons */
+        z-index: 2; /* Ensure buttons are above the overlay */
     }
 }
 
@@ -149,7 +153,6 @@ header .cta-button {
     font-family: 'Georgia', sans-serif; /* sans-serif font for heading */
     font-size: 2.1rem; /* Adjust this size as needed */
     margin-top: 1rem;
-    margin-left: 0.25rem;
     position: relative; /* Ensure the text stays on top of the overlay */
     z-index: 2; /* Make sure the text is above the overlay */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow for clarity */
@@ -160,7 +163,6 @@ header .cta-button {
     font-family: 'Georgia', sans-serif; /* sans-serif font for paragraph */
     font-size: 1.9rem; /* Adjust this value to make the text larger or smaller */
     margin-top: 1rem;
-    margin-left: 0.5rem;
     max-width: 500px; /* Control the width of the paragraph */
     position: relative;
     z-index: 2; /* Ensure the paragraph is above the overlay */
@@ -201,14 +203,6 @@ header .cta-button {
     background: #84E291; /* Hover color changed to orange */
     color: black; /* Font remains white on hover */
     font-weight: bold; /* Make the font bold */
-}
-
-/* Ensure the buttons appear in one line and are close together */
-.hero .cta-buttons {
-    display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    gap: 1rem; /* Adds space between buttons */
-    z-index: 2; /* Ensure buttons are above the overlay */
 }
 
 /* Mobile Styles */
