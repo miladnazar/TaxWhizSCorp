@@ -129,7 +129,7 @@ header .cta-button {
 @media (min-width: 769px) {
     .hero {
         justify-content: flex-start; /* Keeps content towards the top but slightly lower */
-        padding-top: 10rem; /* Moves the content a bit lower */
+        padding-top: 8rem; /* Moves the content a bit lower */
     }
 
     .hero h1, .hero p, .cta-button {
@@ -159,7 +159,7 @@ header .cta-button {
 .hero p {
     font-family: 'Georgia', sans-serif; /* sans-serif font for paragraph */
     font-size: 1.9rem; /* Adjust this value to make the text larger or smaller */
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-left: 6rem;
     max-width: 500px; /* Control the width of the paragraph */
     position: relative;
