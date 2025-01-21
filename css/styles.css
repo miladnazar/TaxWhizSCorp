@@ -121,7 +121,7 @@ header .cta-button {
     text-align: left; /* Align text to the left */
     color: white;
     padding: 1.5rem;
-    max-width: 1200px; /* Optional: Limit the max width */
+    width: 100%; /* Ensure the hero takes the full width of the screen */
     margin: 0 auto; /* Center the section horizontally */
 }
 
