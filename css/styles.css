@@ -237,6 +237,7 @@ header .cta-button {
     .hero .cta-buttons {
         flex-direction: row; /* Stack buttons horizontally on mobile */
         gap: 1rem; /* Space between buttons */
+        padding-top: 2rem
     }
 
     /* Mobile navigation (hamburger) */
