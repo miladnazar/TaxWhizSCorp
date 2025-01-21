@@ -294,7 +294,7 @@ header .cta-button {
     max-width: 100%;
     height: auto;
     margin-top: 1rem;
-    margin-bottom: 0.5rem; /* Adds space below the image */
+    margin-bottom: 1rem; /* Adds space below the image */
 }
 
 /* Services Section */
