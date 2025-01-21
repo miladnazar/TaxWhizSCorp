@@ -135,6 +135,7 @@ header .cta-button {
     .hero h1, .hero p, .cta-button {
         text-align: left; /* Align text to the left */
         margin-left: 2rem; /* Adds space from the left edge */
+        padding-top: 3rem
     }
 
     .hero .cta-buttons {
