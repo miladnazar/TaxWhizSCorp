@@ -129,30 +129,34 @@ header .cta-button {
 @media (min-width: 769px) {
     .hero {
         justify-content: flex-start; /* Keeps content towards the top but slightly lower */
-        padding-top:6rem; /* Moves the content a bit lower */
+        padding-top: 6rem; /* Moves the content a bit lower */
+        align-items: flex-start; /* Align content to the left */
     }
 
-    .hero h1 {
+    /* Apply margin-left to heading, paragraph, and buttons */
+    .hero h1, .hero p, .cta-button, .cta-button-duplicate {
         text-align: left; /* Align text to the left */
         margin-left: 6rem; /* Adds space from the left edge */
+        width: 100%; /* Ensure full width */
     }
 
+    /* Add 6rem space between heading and paragraph */
     .hero p {
-        text-align: left; /* Align text to the left */
-        margin-left: 6rem; /* Adds space from the left edge */
+        margin-top: 6rem; /* Adds 6rem space between heading and paragraph */
     }
 
+    /* Add 6rem space between paragraph and buttons */
     .cta-button {
-        text-align: left; /* Align text to the left */
-        margin-left: 6rem; /* Adds space from the left edge */
+        margin-top: 6rem; /* Adds 6rem space between paragraph and button */
     }
 
     .hero .cta-buttons {
         flex-direction: row;
         justify-content: flex-start; /* Buttons aligned left */
-        gap: 1rem;
+        gap: 1rem; /* Space between buttons */
     }
 }
+
 
 /* Heading 1 Style */
 .hero h1 {
