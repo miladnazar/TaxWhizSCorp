@@ -9,7 +9,7 @@ body {
     font-family: 'Georgia', sans-serif;
     line-height: 1.6;
     color: #173D06;
-    background-color: #FFFFFF; /* Ensure white background for both desktop and mobile */
+    background-color: #FFFFFF;
     margin: 0;
     overflow-x: hidden;
 }
@@ -17,29 +17,17 @@ body {
 /* Header Styling - Desktop */
 header {
     display: flex;
-    align-items: center; /* Vertically center the logo, menu, and button */
-    justify-content: space-between; /* Aligns content at the left and right */
-    background-color: #84E291; /* Green background for header */
-    padding: 1.5rem 2rem; /* Adjusted padding for better alignment */
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #84E291;
+    padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow to make header pop */
 }
 
-/* Logo Styling */
 header .logo img {
     height: 50px;
-}
-
-/* Hamburger Button */
-#hamburger {
-    display: none; /* Hidden on desktop */
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #173D06;
-    cursor: pointer;
 }
 
 /* Navigation */
@@ -60,16 +48,15 @@ nav {
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for smoother hover */
+    transition: background-color 0.3s ease;
 }
 
 #menu a:hover, #menu a.active {
     background-color: #E68900;
     color: white;
-    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* CTA Button */
+/* CTA Button - Adding Animation */
 .cta-button {
     background: #84E291;
     color: #173D06;
@@ -82,34 +69,15 @@ nav {
     margin-bottom: 0;
     z-index: 2;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Ensure buttons align properly with logo and nav items */
-header .cta-button {
-    margin-left: 2rem;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 /* Hover effect for buttons */
 .cta-button:hover {
-    background: #E68900;
-    color: white;
-    transform: scale(1.1); /* Slight zoom effect on hover */
-}
-
-/* Dropdown Styling */
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: #84E291;
-    list-style: none;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-}
-
-#menu li:hover .dropdown {
-    display: block;
+    background: #E68900; /* Change background on hover */
+    color: white; /* Change text color */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for emphasis */
 }
 
 /* Hero Section */
@@ -129,24 +97,21 @@ header .cta-button {
     margin: 0 auto;
 }
 
-/* Center content horizontally but left-align text and buttons in the hero */
 @media (min-width: 769px) {
     .hero {
         justify-content: flex-start;
-        padding-top: 6rem; /* Moves the content a bit lower */
+        padding-top: 6rem;
     }
 
     .hero h1, .hero p, .cta-button {
         text-align: left;
-        margin-left: 6rem; /* Adds 6rem space from the left edge */
+        margin-left: 6rem;
     }
 
-    /* Adds 6rem space between heading and paragraph */
     .hero p {
         margin-top: 6rem;
     }
 
-    /* Adds 6rem space between paragraph and buttons */
     .cta-button {
         margin-top: 6rem;
     }
@@ -163,83 +128,47 @@ header .cta-button {
     font-family: 'Georgia', sans-serif;
     font-size: 2.1rem;
     margin-top: 1rem;
-    margin-left: 6rem;
+    margin-left: 0.25rem;
     position: relative;
     z-index: 2;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease; /* Smooth transform effect */
 }
 
 /* Paragraph Text Style */
 .hero p {
     font-family: 'Georgia', sans-serif;
     font-size: 1.9rem;
-    margin-top: 6rem;
-    margin-left: 6rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
     max-width: 500px;
     position: relative;
     z-index: 2;
+    
     text-shadow: 
         2px 2px 5px rgba(0, 0, 0, 0.7),
-        0 0 10px rgba(0, 0, 0, 0.5),  
+        0 0 10px rgba(0, 0, 0, 0.5),
         0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-/* CTA Button */
-.cta-button, .cta-button-duplicate {
-    background: #E68900;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border: 2px solid #173D06;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 4rem;
-    margin-right: 0.5rem;
-    z-index: 2;
-    display: inline-block;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Modify the background and text color of the duplicate button */
-.cta-button-duplicate {
-    background: black;
-    color: white;
-    border: 2px solid black;
-    font-weight: bold;
-}
-
-/* Hover effect for buttons */
-.cta-button:hover, .cta-button-duplicate:hover {
-    background: #84E291;
-    color: black;
-    font-weight: bold;
-    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    /* Smaller heading for mobile devices */
     .hero h1 {
         font-size: 1.5rem;
         margin-top: 9rem;
     }
 
-    /* Smaller paragraph font size for mobile */
     .hero p {
         font-size: 1.25rem;
         margin-left: 0.5rem;
         max-width: 90%;
     }
 
-    /* Ensure buttons stack properly on mobile */
     .hero .cta-buttons {
         flex-direction: row;
         gap: 1rem;
+        padding-top: 2rem
     }
 
-    /* Mobile navigation (hamburger) */
     #hamburger {
         display: block;
     }
