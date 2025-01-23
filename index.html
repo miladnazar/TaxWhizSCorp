@@ -110,26 +110,30 @@
 
 
 <!-- Contact Form Section -->
-<form action="https://formspree.io/f/mbldjdje" method="POST">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <!-- Service dropdown -->
-    <label for="service">Choose Service:</label>
-    <select name="service" id="service">
-        <option value="Individual">Individual Tax Return</option>
-        <option value="Business">Business Tax Return</option>
-        <option value="Bookkeeping">Bookkeeping Services</option>
-    </select>
-
-    <button type="submit">Submit</button>
-</form>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mbldjdje" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+                <option value="individual">Individual Tax Return</option>
+                <option value="business">Business Tax Return</option>
+                <option value="bookkeeping">Bookkeeping Services</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
 
 
 
