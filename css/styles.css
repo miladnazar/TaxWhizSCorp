@@ -346,17 +346,28 @@ header .cta-button {
 @media (min-width: 769px) {
     #mission .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* Keep heading in one column */
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #mission h2 {
+        width: 100%; /* Ensure the heading takes full width */
+        margin-bottom: 1rem; /* Adds space between heading and paragraph */
+    }
+
+    #mission .content {
+        display: flex; /* Align paragraph and image in a row */
         justify-content: space-between;
-        align-items: center;
+        width: 100%;
     }
 
     #mission p {
-        max-width: 50%; /* Adjust the width of the paragraph */
+        max-width: 50%; /* Paragraph on the left */
     }
 
     #mission img {
-        max-width: 45%; /* Adjust the width of the image */
+        max-width: 45%; /* Image on the right */
     }
 }
 
@@ -374,18 +385,28 @@ header .cta-button {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2rem;
+        width: 48%; /* Make sure the services take up enough space to align side by side */
     }
 
     .service img {
-        max-width: 45%; /* Adjust the width of the image */
+        max-width: 45%; /* Image on the right */
     }
 
     .service p {
-        max-width: 50%; /* Adjust the width of the paragraph */
+        max-width: 50%; /* Paragraph on the left */
     }
 }
 
+/* Additional Media Query for smaller screens */
+@media (max-width: 768px) {
+    #mission .content {
+        flex-direction: column; /* Stack content vertically on mobile */
+    }
 
+    .service {
+        flex-direction: column; /* Stack service content vertically on mobile */
+    }
+}
 
 
 /* Testimonials Section */
