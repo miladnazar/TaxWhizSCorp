@@ -381,6 +381,41 @@ header .cta-button {
     margin-bottom: 1rem;
 }
 
+/* About Section Styling */
+#about {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mobile Styles for About Section */
+@media (max-width: 768px) {
+    #about p {
+        font-size: 1.1rem; /* Adjust font size for mobile */
+        margin: 0 1rem; /* Add margin for mobile screens */
+    }
+}
+
+
 /* Contact Form Section */
 #contact {
     padding: 4rem 2rem;
