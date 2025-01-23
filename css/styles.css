@@ -292,12 +292,23 @@ header .cta-button {
     margin-bottom: 1rem;
 }
 
+/* Mission Section Image Animation */
 #mission img {
     max-width: 100%;
     height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem; /* Adds space below the image */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 1s ease, transform 1s ease; /* Animation effect */
 }
+
+/* Animate image when it is in view */
+#mission img.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to normal position */
+}
+
 
 /* Services Section */
 #services {
