@@ -342,71 +342,22 @@ header .cta-button {
     margin-bottom: 2rem; /* Adds space below the image */
 }
 
-/* Mission Section */
+/* Center content horizontally for desktop */
 @media (min-width: 769px) {
-    #mission .container {
-        display: flex;
-        flex-direction: column; /* Keep heading in one column */
-        justify-content: flex-start;
-        align-items: flex-start;
+    #services .service {
+        text-align: left; /* Left align the text inside service for desktop */
+        align-items: flex-start; /* Align the text to the left */
     }
 
-    #mission h2 {
-        width: 100%; /* Ensure the heading takes full width */
-        margin-bottom: 1rem; /* Adds space between heading and paragraph */
-    }
-
-    #mission .content {
-        display: flex; /* Align paragraph and image in a row */
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    #mission p {
-        max-width: 50%; /* Paragraph on the left */
-    }
-
-    #mission img {
-        max-width: 45%; /* Image on the right */
-    }
-}
-
-/* Services Section */
-@media (min-width: 769px) {
     #services .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        padding: 0 2rem; /* Space on left and right of content */
     }
 
-    .service {
-        display: flex;
-        flex-direction: row; /* Align content horizontally */
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-        width: 48%; /* Make sure the services take up enough space to align side by side */
-    }
-
-    .service img {
-        max-width: 45%; /* Image on the right */
-    }
-
-    .service p {
-        max-width: 50%; /* Paragraph on the left */
+    #services h2 {
+        text-align: center; /* Ensure the header is centered in desktop */
     }
 }
 
-/* Additional Media Query for smaller screens */
-@media (max-width: 768px) {
-    #mission .content {
-        flex-direction: column; /* Stack content vertically on mobile */
-    }
-
-    .service {
-        flex-direction: column; /* Stack service content vertically on mobile */
-    }
-}
 
 
 /* Testimonials Section */
