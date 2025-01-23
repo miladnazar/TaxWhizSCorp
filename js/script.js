@@ -30,4 +30,13 @@ window.addEventListener('scroll', () => {
             navLinks[index].classList.add('active');
         }
     });
+
+    // Fade in the Mission image when it comes into view
+    const missionImage = document.querySelector('#mission img');
+    const imagePosition = missionImage.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+
+    if (imagePosition < screenPosition) {
+        missionImage.classList.add('visible'); // Trigger fade-in
+    }
 });
