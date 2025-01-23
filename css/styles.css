@@ -342,21 +342,49 @@ header .cta-button {
     margin-bottom: 2rem; /* Adds space below the image */
 }
 
-/* Center content horizontally for desktop */
+/* Mission Section */
 @media (min-width: 769px) {
-    #services .service {
-        text-align: left; /* Left align the text inside service for desktop */
-        align-items: flex-start; /* Align the text to the left */
+    #mission .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    #services .container {
-        padding: 0 2rem; /* Space on left and right of content */
+    #mission p {
+        max-width: 50%; /* Adjust the width of the paragraph */
     }
 
-    #services h2 {
-        text-align: center; /* Ensure the header is centered in desktop */
+    #mission img {
+        max-width: 45%; /* Adjust the width of the image */
     }
 }
+
+/* Services Section */
+@media (min-width: 769px) {
+    #services .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: row; /* Align content horizontally */
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .service img {
+        max-width: 45%; /* Adjust the width of the image */
+    }
+
+    .service p {
+        max-width: 50%; /* Adjust the width of the paragraph */
+    }
+}
+
 
 
 
