@@ -33,15 +33,18 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Event listener for services dropdown links
+// Dropdown navigation
 document.querySelectorAll('.dropdown a').forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1); // Get the ID from the href attribute
-        const targetSection = document.getElementById(targetId);
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the target section ID
+        const targetSection = document.getElementById(targetId); // Get the section element
 
         if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section
+            window.scrollTo({
+                top: targetSection.offsetTop, // Scroll to the top of the section
+                behavior: 'smooth' // Smooth scroll
+            });
         }
     });
 });
