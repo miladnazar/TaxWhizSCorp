@@ -8,25 +8,6 @@ hamburger.addEventListener('click', () => {
     menuContainer.classList.toggle('open'); // Toggle the 'open' class
 });
 
-// Smooth Scrolling
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Smooth Scrolling
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 
 // Active Link Highlighting
