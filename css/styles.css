@@ -306,11 +306,17 @@ header .cta-button {
     background-color: #f9f9f9;
 }
 
+#services .container {
+    max-width: 1200px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
 #services .service {
     margin-bottom: 2rem;
-    text-align: left; /* Align text to the left within the service container */
-    margin-left: 2rem;
-    margin-right: 2rem; /* Add space on both sides for alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center both the text and images horizontally */
+    text-align: center; /* Ensure text is centered in service boxes */
 }
 
 #services h2 {
@@ -328,14 +334,19 @@ header .cta-button {
 /* Center content horizontally for desktop */
 @media (min-width: 769px) {
     #services .service {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left; /* Left align the text in desktop version */
+        text-align: left; /* Left align the text inside service for desktop */
+        align-items: flex-start; /* Align the text to the left */
     }
-    #services h2, .hero p {
+
+    #services .container {
+        padding: 0 2rem; /* Space on left and right of content */
+    }
+
+    #services h2 {
         text-align: center; /* Ensure the header is centered in desktop */
     }
 }
+
 
 
 /* Testimonials Section */
