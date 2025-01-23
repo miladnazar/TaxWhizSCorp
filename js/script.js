@@ -40,3 +40,41 @@ window.addEventListener('scroll', () => {
         missionImage.classList.add('visible'); // Trigger fade-in
     }
 });
+
+// Handling Form Submission
+document.querySelector('#contact form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    
+    // Get form data (you can use FormData or serialize the form inputs)
+    const formData = new FormData(this); 
+
+    // You can make an AJAX request to send the data to your PHP server if needed
+    // Here we'll simulate a successful submission and show a thank you message
+
+    // Example: You could use Fetch to send the form data to your PHP backend (info@taxwhiz.co)
+    fetch('submit_form.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())  // Assuming the server responds with JSON
+    .then(data => {
+        if (data.success) {
+            // Show Thank You message on successful submission
+            const thankYouMessage = document.createElement('div');
+            thankYouMessage.textContent = "Thank you for your submission! We'll get back to you soon.";
+            thankYouMessage.style.fontSize = '18px';
+            thankYouMessage.style.color = '#28a745'; // Green color for success
+            document.querySelector('#contact').appendChild(thankYouMessage);
+
+            // Optionally, you can hide the form after submission
+            document.querySelector('#contact form').style.display = 'none';
+        } else {
+            // Show error message if submission fails
+            alert("Oops! Something went wrong. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("Oops! Something went wrong. Please try again.");
+    });
+});
