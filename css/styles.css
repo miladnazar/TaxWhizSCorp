@@ -399,6 +399,12 @@ header .cta-button {
     margin-bottom: 2rem;
 }
 
+#about h3 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
 #about p {
     font-size: 1.2rem;
     color: #333;
@@ -412,6 +418,14 @@ header .cta-button {
     #about p {
         font-size: 1.1rem; /* Adjust font size for mobile */
         margin: 0 1rem; /* Add margin for mobile screens */
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about h3 {
+        font-size: 1.7rem;
     }
 }
 
