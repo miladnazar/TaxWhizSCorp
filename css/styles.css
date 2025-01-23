@@ -334,7 +334,7 @@ header .cta-button {
 /* Center content horizontally for desktop */
 @media (min-width: 769px) {
     #services .service {
-        text-align: left; /* Left align the text inside service for desktop */
+        text-align: center; /* Left align the text inside service for desktop */
         align-items: flex-start; /* Align the text to the left */
     }
 
