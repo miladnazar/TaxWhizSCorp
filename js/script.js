@@ -32,19 +32,3 @@ window.addEventListener('scroll', () => {
         missionImage.classList.add('visible'); // Trigger fade-in
     }
 });
-
-// Dropdown navigation
-document.querySelectorAll('.dropdown a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        const targetId = this.getAttribute('href').substring(1); // Get the target section ID
-        const targetSection = document.getElementById(targetId); // Get the section element
-
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop, // Scroll to the top of the section
-                behavior: 'smooth' // Smooth scroll
-            });
-        }
-    });
-});
