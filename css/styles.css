@@ -302,12 +302,15 @@ header .cta-button {
 /* Services Section */
 #services {
     padding: 4rem 2rem;
-    text-align: center;
+    text-align: center; /* Center text for both desktop and mobile */
     background-color: #f9f9f9;
 }
 
 #services .service {
     margin-bottom: 2rem;
+    text-align: left; /* Align text to the left within the service container */
+    margin-left: 2rem;
+    margin-right: 2rem; /* Add space on both sides for alignment */
 }
 
 #services h2 {
@@ -318,7 +321,22 @@ header .cta-button {
 #services .service img {
     max-width: 100%;
     height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* Adds space below the image */
 }
+
+/* Center content horizontally for desktop */
+@media (min-width: 769px) {
+    #services .service {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left; /* Left align the text in desktop version */
+    }
+    #services h2, .hero p {
+        text-align: center; /* Ensure the header is centered in desktop */
+    }
+}
+
 
 /* Testimonials Section */
 #testimonials {
