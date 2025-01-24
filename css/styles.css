@@ -348,6 +348,17 @@ header .cta-button {
     margin-bottom: 2rem; /* Adds space below the image */
 }
 
+/* Styling for the price under each service */
+.price {
+    font-size: 1.8rem; /* Larger font size for the price */
+    font-weight: bold; /* Make the price bold */
+    color: #E68900; /* Gold-like color for the price */
+    margin-top: 1rem; /* Space between the paragraph and price */
+    margin-bottom: 1rem; /* Space below the price */
+    text-align: center; /* Center the price */
+}
+
+
 /* Center content horizontally for desktop */
 @media (min-width: 769px) {
     #services .service {
