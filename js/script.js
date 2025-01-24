@@ -32,3 +32,22 @@ window.addEventListener('scroll', () => {
         missionImage.classList.add('visible'); // Trigger fade-in
     }
 });
+
+<script>
+  // When an anchor link is clicked, scroll smoothly with an offset
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      // Scroll to the target element with an offset to the middle
+      window.scrollTo({
+        top: targetElement.offsetTop - (window.innerHeight / 2), // Adjust the offset for the middle
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
