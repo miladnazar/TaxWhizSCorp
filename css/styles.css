@@ -338,7 +338,7 @@ header .cta-button {
 
 /* Styling for service titles (Individual Tax Return, Business Tax Return, Bookkeeping Services) */
 #services .service h3 {
-    font-size: 2.5rem; /* Adjust font size as needed */
+    font-size: 1.8rem; /* Adjust font size as needed */
     font-weight: bold; /* Ensure the text is bold */
     color: #173D06; /* Dark green or any color you prefer */
     margin-bottom: 1rem; /* Adds space below the heading */
