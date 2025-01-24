@@ -32,38 +32,3 @@ window.addEventListener('scroll', () => {
         missionImage.classList.add('visible'); // Trigger fade-in
     }
 });
-
-<script>
-  // When an anchor link is clicked, scroll smoothly with an offset
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      
-<script>
-                            
-  // Function to scroll to the middle of a section
-  function scrollToElement(id) {
-    const element = document.getElementById(id);
-    if (element) {
-      // Scroll to the element and adjust position to middle
-      window.scrollTo({
-        top: element.offsetTop - (window.innerHeight / 2) + (element.offsetHeight / 2),
-        behavior: 'smooth'
-      });
-    }
-  }
-
-  // Event listener for anchor clicks
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1); // Get target id
-      scrollToElement(targetId); // Call function to scroll to middle of the section
-    });
-  });
-</script>
-
-
