@@ -42,12 +42,28 @@ window.addEventListener('scroll', () => {
       const targetId = this.getAttribute('href').substring(1);
       const targetElement = document.getElementById(targetId);
       
-      // Scroll to the target element with an offset to the middle
+<script>
+                            
+  // Function to scroll to the middle of a section
+  function scrollToElement(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      // Scroll to the element and adjust position to middle
       window.scrollTo({
-        top: targetElement.offsetTop - (window.innerHeight / 2), // Adjust the offset for the middle
+        top: element.offsetTop - (window.innerHeight / 2) + (element.offsetHeight / 2),
         behavior: 'smooth'
       });
+    }
+  }
+
+  // Event listener for anchor clicks
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1); // Get target id
+      scrollToElement(targetId); // Call function to scroll to middle of the section
     });
   });
 </script>
+
 
