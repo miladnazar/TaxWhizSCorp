@@ -116,7 +116,7 @@ header .cta-button {
 .call-today-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #E68900; /* Blue color, change as needed */
+    background-color: #E68900; /* Orange color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -126,27 +126,25 @@ header .cta-button {
 }
 
 .call-today-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #84E291; /* Green color on hover */
 }
 
 /* Hero Section */
 .hero {
-  position: relative; /* Allow absolute positioning for overlay */
-  background: url('../img/hero-bg.jpg') no-repeat top center/cover;
-  background-color: #FFFFFF; /* White background below the image */
-  height: 100vh; /* Full viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Aligns content at the top */
-  align-items: flex-start; /* Aligns content to the left part of the center */
-  text-align: left; /* Align text to the left */
-  color: white;
-  padding: 1.5rem;
-  width: 100%; /* Ensure the hero takes the full width of the screen */
-  margin: 0 auto; /* Center the section horizontally */
+    position: relative; /* Allow absolute positioning for overlay */
+    background: url('../img/hero-bg.jpg') no-repeat top center/cover;
+    background-color: #FFFFFF; /* White background below the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content at the top */
+    align-items: flex-start; /* Aligns content to the left part of the center */
+    text-align: left; /* Align text to the left */
+    color: white;
+    padding: 1.5rem;
+    width: 100%; /* Ensure the hero takes the full width of the screen */
+    margin: 0 auto; /* Center the section horizontally */
 }
-
-
 
 /* Center content horizontally but left-align text and buttons in the hero */
 @media (min-width: 769px) {
@@ -158,7 +156,7 @@ header .cta-button {
     .hero h1, .hero p, .cta-button {
         text-align: left; /* Align text to the left */
         margin-left: 2rem; /* Adds space from the left edge */
-        padding-top: 3rem
+        padding-top: 3rem;
     }
 
     .hero .cta-buttons {
@@ -260,7 +258,7 @@ header .cta-button {
     .hero .cta-buttons {
         flex-direction: row; /* Stack buttons horizontally on mobile */
         gap: 1rem; /* Space between buttons */
-        padding-top: 2rem
+        padding-top: 2rem;
     }
 
     /* Mobile navigation (hamburger) */
@@ -296,6 +294,7 @@ header .cta-button {
         background-size: contain; /* Adjust background size for mobile */
     }
 }
+
 /* Mission Section */
 #mission {
     background-color: #f4f4f4;
@@ -329,7 +328,6 @@ header .cta-button {
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to normal position */
 }
-
 
 /* Services Section */
 #services {
@@ -381,7 +379,6 @@ header .cta-button {
     text-align: center; /* Center the price */
 }
 
-
 /* Center content horizontally for desktop */
 @media (min-width: 769px) {
     #services .service {
@@ -397,8 +394,6 @@ header .cta-button {
         text-align: center; /* Ensure the header is centered in desktop */
     }
 }
-
-
 
 /* Testimonials Section */
 #testimonials {
@@ -469,7 +464,6 @@ header .cta-button {
     }
 }
 
-
 /* Contact Form Section */
 #contact {
     padding: 4rem 2rem;
@@ -481,7 +475,6 @@ header .cta-button {
     text-align: center;  /* Center the heading */
     margin-bottom: 2rem;
 }
-
 
 #contact form {
     max-width: 600px;
@@ -518,41 +511,94 @@ header .cta-button {
     background-color: #84E291;
 }
 
+/* Blog Section */
+#blog {
+    background-color: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+#blog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #173D06;
+}
+
+#blog h3 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #E68900;
+}
+
+#blog p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#blog ul {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+#blog ul li {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+#blog a {
+    color: #E68900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
 
 /* Footer Section */
 footer {
-  background-color: #f4f4f4;
-  color: #000;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-info p {
-  margin: 10px 0;
-  font-size: 14px;
+    margin: 10px 0;
+    font-size: 14px;
 }
 
 .footer-info a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .footer-info i {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer-social a {
-  color: #000;
-  font-size: 18px;
-  margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 .footer-social a:hover {
-  color: #0073e6;
+    color: #0073e6;
 }
