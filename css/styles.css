@@ -113,6 +113,21 @@ header .cta-button {
     display: block;
 }
 
+.call-today-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue color, change as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px; /* Adjust spacing as needed */
+    transition: background-color 0.3s ease;
+}
+
+.call-today-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
 
 /* Hero Section */
 .hero {
