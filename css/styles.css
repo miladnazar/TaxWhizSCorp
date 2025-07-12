@@ -19,19 +19,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header - Fixed Positioning */
+/* Header Styling - Desktop */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px; /* Fixed height */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Vertically center the logo, menu, and button */
+    justify-content: space-between; /* Aligns content at the left and right */
     background-color: #84E291;
     padding: 1rem;
-    z-index: 1000; /* Higher z-index to ensure it stays on top */
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 /* Logo Styling */
@@ -132,61 +129,40 @@ header .cta-button {
     background-color: #84E291; /* Green color on hover */
 }
 
-/* Hero Section - Accounts for fixed header */
+/* Hero Section */
 .hero {
-    position: relative;
-    background: url('../img/background_image.jpg') no-repeat center center/cover;
-    background-color: #FFFFFF;
-    margin-top: 70px; /* Matches header height */
-    min-height: calc(100vh - 70px); /* Subtracts header height */
+    position: relative; /* Allow absolute positioning for overlay */
+    background: url('../img/hero-bg.jpg') no-repeat top center/cover;
+    background-color: #FFFFFF; /* White background below the image */
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+    justify-content: flex-start; /* Aligns content at the top */
+    align-items: flex-start; /* Aligns content to the left part of the center */
+    text-align: left; /* Align text to the left */
     color: white;
-    padding: 2rem;
-    width: 100%;
-    overflow: hidden;
+    padding: 1.5rem;
+    width: 100%; /* Ensure the hero takes the full width of the screen */
+    margin: 0 auto; /* Center the section horizontally */
 }
 
-/* Mobile adjustments for header/hero spacing */
-@media (max-width: 768px) {
-    header {
-        height: 60px; /* Slightly shorter header on mobile */
-    }
-    
+/* Center content horizontally but left-align text and buttons in the hero */
+@media (min-width: 769px) {
     .hero {
-        margin-top: 60px; /* Matches mobile header height */
-        min-height: calc(100vh - 60px); /* Adjusts for mobile header */
-        padding-top: 1rem; /* Tighter top padding */
-    }
-}
-
-    .hero h1 {
-        font-size: 1.8rem; /* Slightly larger for better readability */
-        margin-top: 0;
-        margin-left: 0;
-        width: 100%; /* Ensure full width */
+        justify-content: flex-start; /* Keeps content towards the top but slightly lower */
+        padding-top: 3rem; /* Moves the content a bit lower */
     }
 
-    .hero p {
-        font-size: 1.3rem;
-        margin-left: 0;
-        max-width: 100%; /* Take full width */
-        padding-right: 1rem; /* Prevent text from touching edges */
+    .hero h1, .hero p, .cta-button {
+        text-align: left; /* Align text to the left */
+        margin-left: 2rem; /* Adds space from the left edge */
+        padding-top: 3rem;
     }
 
     .hero .cta-buttons {
-        flex-direction: column; /* Stack buttons vertically on mobile */
+        flex-direction: row;
+        justify-content: flex-start; /* Buttons aligned left */
         gap: 1rem;
-        width: 100%;
-    }
-
-    .cta-button, .cta-button-duplicate {
-        width: 100%; /* Full width buttons on mobile */
-        margin-right: 0;
-        text-align: center;
     }
 }
 
