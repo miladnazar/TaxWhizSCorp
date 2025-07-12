@@ -19,16 +19,19 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header Styling - Desktop */
+/* Header - Fixed Positioning */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px; /* Fixed height */
     display: flex;
-    align-items: center; /* Vertically center the logo, menu, and button */
-    justify-content: space-between; /* Aligns content at the left and right */
+    align-items: center;
+    justify-content: space-between;
     background-color: #84E291;
     padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    z-index: 1000; /* Higher z-index to ensure it stays on top */
 }
 
 /* Logo Styling */
@@ -129,33 +132,36 @@ header .cta-button {
     background-color: #84E291; /* Green color on hover */
 }
 
-/* Hero Section */
+/* Hero Section - Accounts for fixed header */
 .hero {
     position: relative;
     background: url('../img/background_image.jpg') no-repeat center center/cover;
     background-color: #FFFFFF;
-    min-height: 100vh; /* Changed from height to min-height */
+    margin-top: 70px; /* Matches header height */
+    min-height: calc(100vh - 70px); /* Subtracts header height */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Changed to center vertically */
+    justify-content: center;
     align-items: flex-start;
     text-align: left;
     color: white;
     padding: 2rem;
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden; /* Prevent content from bleeding out */
+    overflow: hidden;
 }
 
-/* Mobile Styles */
+/* Mobile adjustments for header/hero spacing */
 @media (max-width: 768px) {
-    .hero {
-        background-size: cover; /* Changed from contain to cover */
-        background-position: center center;
-        padding: 1rem;
-        justify-content: flex-start; /* Align content to top */
-        padding-top: 6rem; /* Push content down below mobile header */
+    header {
+        height: 60px; /* Slightly shorter header on mobile */
     }
+    
+    .hero {
+        margin-top: 60px; /* Matches mobile header height */
+        min-height: calc(100vh - 60px); /* Adjusts for mobile header */
+        padding-top: 1rem; /* Tighter top padding */
+    }
+}
 
     .hero h1 {
         font-size: 1.8rem; /* Slightly larger for better readability */
