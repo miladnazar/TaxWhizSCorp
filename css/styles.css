@@ -131,38 +131,56 @@ header .cta-button {
 
 /* Hero Section */
 .hero {
-    position: relative; /* Allow absolute positioning for overlay */
-    background: url('../img/background_image.jpg') no-repeat top center/cover;
-    background-color: #FFFFFF; /* White background below the image */
-    height: 100vh; /* Full viewport height */
+    position: relative;
+    background: url('../img/background_image.jpg') no-repeat center center/cover;
+    background-color: #FFFFFF;
+    min-height: 100vh; /* Changed from height to min-height */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns content at the top */
-    align-items: flex-start; /* Aligns content to the left part of the center */
-    text-align: left; /* Align text to the left */
+    justify-content: center; /* Changed to center vertically */
+    align-items: flex-start;
+    text-align: left;
     color: white;
-    padding: 1.5rem;
-    width: 100%; /* Ensure the hero takes the full width of the screen */
-    margin: 0 auto; /* Center the section horizontally */
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent content from bleeding out */
 }
 
-/* Center content horizontally but left-align text and buttons in the hero */
-@media (min-width: 769px) {
+/* Mobile Styles */
+@media (max-width: 768px) {
     .hero {
-        justify-content: flex-start; /* Keeps content towards the top but slightly lower */
-        padding-top: 3rem; /* Moves the content a bit lower */
+        background-size: cover; /* Changed from contain to cover */
+        background-position: center center;
+        padding: 1rem;
+        justify-content: flex-start; /* Align content to top */
+        padding-top: 6rem; /* Push content down below mobile header */
     }
 
-    .hero h1, .hero p, .cta-button {
-        text-align: left; /* Align text to the left */
-        margin-left: 2rem; /* Adds space from the left edge */
-        padding-top: 3rem;
+    .hero h1 {
+        font-size: 1.8rem; /* Slightly larger for better readability */
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%; /* Ensure full width */
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-left: 0;
+        max-width: 100%; /* Take full width */
+        padding-right: 1rem; /* Prevent text from touching edges */
     }
 
     .hero .cta-buttons {
-        flex-direction: row;
-        justify-content: flex-start; /* Buttons aligned left */
+        flex-direction: column; /* Stack buttons vertically on mobile */
         gap: 1rem;
+        width: 100%;
+    }
+
+    .cta-button, .cta-button-duplicate {
+        width: 100%; /* Full width buttons on mobile */
+        margin-right: 0;
+        text-align: center;
     }
 }
 
